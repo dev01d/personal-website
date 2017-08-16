@@ -204,6 +204,28 @@ hr {
 .social-icon {
   padding: 0;
 }
+
+/* social icon ad-block workaround*/
+.ab-fa-facebook:before {
+  content: "\f09a";
+}
+.ab-fa-instagram:before {
+  content: "\f16d";
+}
+.ab-fa-500px:before {
+  content: "\f26e";
+}
+.ab-fa-vimeo:before {
+  content: "\f27d";
+}
+.ab-fa-github:before {
+  content: "\f09b";
+}
+.ab-fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+
 .social-icon li {
   list-style: none;
   display: inline-block;
