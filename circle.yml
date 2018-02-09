@@ -7,4 +7,4 @@ deployment:
     branch: master
     commands:
       - git remote add production dokku@dokku.jasonbehnke.net:personal-site
-      - git push production master
+      - git push production master -f
