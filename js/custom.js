@@ -1,6 +1,6 @@
 // preloader
 $(window).load(function () {
-  $('.preloader').fadeOut(800); // set duration in brackets    
+  $('.preloader').fadeOut(600); // set duration in brackets    
 });
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
