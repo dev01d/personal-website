@@ -2,7 +2,7 @@
 
 body {
   background: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   position: relative;
 }
@@ -176,6 +176,11 @@ hr {
 #gallery img {
   width: 100%;
   padding-bottom: 18px;
+  transition: all 0.25s;
+  border-radius: 3px;
+}
+#gallery img:hover {
+  transform: scale(1.075);
 }
 #gallery .col-md-4 div {
   position: relative;
