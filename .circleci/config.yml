@@ -1,9 +1,11 @@
 version: 2
-
+jobs:
+  build:
+    override:
+      - "true"
 test:
   override:
     - "true"
-    
 deployment:
   production:
     branch: master
