@@ -1,21 +1,22 @@
 // preloader
-$(window).load(function () {
-  $('.preloader').fadeOut(600); // set duration in brackets    
-});
+$(window).load(function() {
+  $('.preloader').fadeOut(600) // set duration
+})
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
-$(function () {
+$(function() {
   // ------- WOW ANIMATED ------ //
   var wow = new WOW({
+    // not on mobile
     mobile: false
-  });
-  wow.init();
+  })
+  wow.init()
   // HIDE MOBILE MENU AFTER CLIKING ON A LINK
-  $('.navbar-collapse a').click(function () {
-    $(".navbar-collapse").collapse('hide');
-  });
+  $('.navbar-collapse a').click(function() {
+    $('.navbar-collapse').collapse('hide')
+  })
   // NIVO LIGHTBOX
   $('#gallery a').nivoLightbox({
-    effect: 'fadeScale',
-  });
-});
+    effect: 'fadeScale'
+  })
+})
