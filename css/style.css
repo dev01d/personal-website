@@ -88,7 +88,8 @@ hr {
 
 /* home section */
 #home {
-  background: url('../assets/that_tac_background.png') 100% 0 no-repeat;
+  background: url('https://res.cloudinary.com/dev01d/q_auto,f_auto/full/that_tac_background.png')
+    100% 0 no-repeat;
   -webkit-background-size: cover;
   background-size: fixed;
   background-position: center;
