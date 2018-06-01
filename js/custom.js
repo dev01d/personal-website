@@ -1,6 +1,6 @@
 // preloader
 $(window).load(function() {
-  $('.preloader').fadeOut(600) // set duration
+  $('.preloader').fadeOut(500) // set duration
 })
 /* HTML document is loaded. DOM is ready. 
 -------------------------------------------*/
