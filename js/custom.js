@@ -1,10 +1,6 @@
-// Sentry init
-Raven.config(
-  'https://8fc9bb60a6d64dd68e99edde1b84582d@sentry.jasonbehnke.net/2'
-).install()
 // preloader
 $(window).load(function() {
-  $('.preloader').fadeOut(500) // set duration
+  $('.preloader').fadeOut(400) // set duration
 })
 // Wow animations
 const wow = new WOW({
@@ -16,3 +12,10 @@ wow.init()
 $('.navbar-collapse a').click(function() {
   $('.navbar-collapse').collapse('hide')
 })
+// Google Analytics
+window.dataLayer = window.dataLayer || []
+function gtag() {
+  dataLayer.push(arguments)
+}
+gtag('js', new Date())
+gtag('config', 'UA-113541043-1')

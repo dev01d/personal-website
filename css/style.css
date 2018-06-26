@@ -2,7 +2,7 @@
 
 body {
   background: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 400;
   position: relative;
 }
@@ -82,7 +82,7 @@ hr {
   font-weight: bold;
 }
 .navbar-default .navbar-nav li a {
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -121,6 +121,7 @@ hr {
   border: 3px solid #ffffff;
   color: #ffffff;
   font-weight: bold;
+  font-size: 16px;
   letter-spacing: 2px;
   padding: 16px 42px;
   margin-top: 20px;
@@ -258,7 +259,7 @@ copyright {
 }
 #copyright p {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 16px;
 }
 #copyright a {
   color: #ffffff;
