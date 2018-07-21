@@ -8,14 +8,7 @@ const wow = new WOW({
   mobile: false
 })
 wow.init()
-// HIDE MOBILE MENU AFTER CLIKING ON A LINK
+// Hide mobile menu after clicking on a link
 $('.navbar-collapse a').click(function() {
   $('.navbar-collapse').collapse('hide')
 })
-// Google Analytics
-window.dataLayer = window.dataLayer || []
-function gtag() {
-  dataLayer.push(arguments)
-}
-gtag('js', new Date())
-gtag('config', 'UA-113541043-1')
