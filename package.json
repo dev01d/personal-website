@@ -1,0 +1,24 @@
+{
+  "name": "jasonbehnke.net",
+  "version": "2.0.0",
+  "description": "Personal Website",
+  "main": "index.js",
+  "repository": "https://github.com/dev01d/jasonbehnke.net.git",
+  "author": "Jason Behnke <contact@jasonbehnke.net>",
+  "homepage": "https://jasonbehnke.net",
+  "license": "MIT",
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "src": "^1.1.2"
+  },
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.9.7"
+  }
+}
