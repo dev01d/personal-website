@@ -11,13 +11,12 @@ class Main extends React.Component {
   render() {
     return (
       <div>
-        <section id="home">
-          <div className="row">
-            <div>
-              <img src="https://res.cloudinary.com/dev01d/q_auto,f_auto/full/main.png" />
-            </div>
+        <div id="home" className="row">
+          <div>
+            <img src="https://res.cloudinary.com/dev01d/q_auto,f_auto/full/main.png" />
           </div>
-        </section>
+        </div>
+
         <ul className="social-icon">
           <li>
             <a
