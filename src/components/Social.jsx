@@ -12,7 +12,7 @@ const Social = () => (
       </li>
       <li>
         <a
-          href="mailto:contact@jasonbehnke.net?subject=Inquiry"
+          href="mailto:contact@jasonbehnke.io?subject=Inquiry"
           className="far fa-envelope"
           alt="email"
         />
