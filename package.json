@@ -18,7 +18,8 @@
   },
   "scripts": {
     "dev": "parcel public/index.html",
-    "build": "node ./scripts/create-env.js && parcel build public/index.html"
+    "build": "parcel build public/index.html",
+    "build:env": "node ./scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
