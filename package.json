@@ -8,6 +8,7 @@
   "homepage": "https://jasonbehnke.io",
   "license": "MIT",
   "dependencies": {
+    "@sentry/browser": "4.4.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.9.7",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html"
+    "build": "node ./scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
