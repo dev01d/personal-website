@@ -20,27 +20,16 @@ p {
 }
 #home {
   max-width: 40rem;
-  padding: 10rem 3rem;
+  padding: 3rem 2rem;
   margin: 0 auto;
   height: 100%;
 }
 svg {
   border-radius: 60%;
-  /*! I hate you Safari */
   -webkit-appearance: none;
-  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  overflow: visible;
-}
-svg:hover {
-  transform: scale(1.02);
-  border-radius: 60%;
-  /*! I hate you Safari */
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0 30px 50px #56098a5b;
-  -moz-box-shadow: 0 30px 50px #56098a5b;
-  box-shadow: 0 30px 50px #56098a5b;
+  -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.7);
   overflow: visible;
 }
 .social-icon {
@@ -63,9 +52,9 @@ svg:hover {
   align-content: center;
   text-decoration: none;
   margin-top: 12px;
+  margin-bottom: 12px;
   margin-right: 10px;
   margin-left: 10px;
-  /*! I hate you Safari */
   -webkit-appearance: none;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
@@ -75,7 +64,6 @@ svg:hover {
 .social-icon li a:hover {
   transform: scale(1.02);
   color: #8b3bc0;
-  /*! I hate you Safari */
   -webkit-appearance: none;
   -webkit-box-shadow: 0 10px 10px #56098a5b;
   -moz-box-shadow: 0 10px 10px #56098a5b;
