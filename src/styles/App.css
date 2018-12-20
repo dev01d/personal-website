@@ -1,5 +1,6 @@
 /*
 TODO: move to semUI 
+TODO: Fix Safari box shadow weirdness
 */
 
 html,
@@ -8,10 +9,6 @@ body {
   min-height: 100%;
   height: auto !important;
   background: linear-gradient(to bottom, #dedfe4 0%, #a1a3a3 40%);
-}
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
 }
 h2,
 p {
@@ -29,14 +26,22 @@ p {
 }
 svg {
   border-radius: 60%;
+  /*! I hate you Safari */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-  overflow: hidden;
+  overflow: visible;
 }
 svg:hover {
   transform: scale(1.02);
   border-radius: 60%;
+  /*! I hate you Safari */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 30px 50px #56098a5b;
+  -moz-box-shadow: 0 30px 50px #56098a5b;
   box-shadow: 0 30px 50px #56098a5b;
-  overflow: hidden;
+  overflow: visible;
 }
 .social-icon {
   padding-right: 40px;
@@ -60,13 +65,22 @@ svg:hover {
   margin-top: 12px;
   margin-right: 10px;
   margin-left: 10px;
+  /*! I hate you Safari */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
-  overflow: hidden;
+  overflow: visible;
 }
 .social-icon li a:hover {
   transform: scale(1.02);
   color: #8b3bc0;
+  /*! I hate you Safari */
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 10px 10px #56098a5b;
+  -moz-box-shadow: 0 10px 10px #56098a5b;
   box-shadow: 0 10px 10px #56098a5b;
+  overflow: visible;
 }
 @media screen and (min-width: 35rem) {
   #home {
