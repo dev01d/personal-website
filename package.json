@@ -17,6 +17,7 @@
     "src": "^1.1.2"
   },
   "scripts": {
+    "test": "echo '01010100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01110100 01100101 01110011 01110100 00101110'",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html",
     "build:env": "node ./scripts/create-env.js && parcel build public/index.html"
