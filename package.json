@@ -9,21 +9,25 @@
   "license": "MIT",
   "dependencies": {
     "@sentry/browser": "^4.4.2",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.11.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.0.0",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "^16.0.0",
+    "react-grid-gallery": "^0.5.3",
+    "react-lightbox-component": "^1.2.1",
+    "react-photo-gallery": "^6.3.0",
+    "react-router-dom": "^4.3.1",
     "src": "^1.1.2"
   },
   "scripts": {
     "test": "echo '01010100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 00100000 01110100 01100101 01110011 01110100 00101110'",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html",
-    "build:env": "node ./scripts/create-env.js && parcel build public/index.html"
+    "build:env": "node ./src/scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.11.0"
   }
 }
