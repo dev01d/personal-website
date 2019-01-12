@@ -8,8 +8,6 @@ body {
   height: 100%;
   min-height: 100%;
   background: #a1a3a3 40%;
-  /* height: auto !important; */
-  /*background: linear-gradient(to bottom, #dedfe4 0%, #a1a3a3 40%); */
 }
 h2,
 p {
@@ -79,6 +77,9 @@ svg {
   -moz-box-shadow: 0 10px 10px #56098a5b;
   box-shadow: 0 10px 10px #56098a5b;
   overflow: visible;
+}
+.social-icon p {
+  margin-left: 35px;
 }
 @media screen and (min-width: 35rem) {
   #home {
