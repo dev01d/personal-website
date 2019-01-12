@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo '001100 010010 011110 100001 101101 110011'",
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html",
+    "build": "parcel build public/index.html && echo '/*    /index.html   200' > dist/_redirects",
     "build:env": "node ./src/scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
