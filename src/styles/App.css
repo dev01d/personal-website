@@ -1,5 +1,5 @@
 /*
-TODO: move to semUI 
+TODO: move to semUI
 TODO: Fix Safari box shadow weirdness
 */
 
@@ -7,22 +7,32 @@ html,
 body {
   height: 100%;
   min-height: 100%;
-  height: auto !important;
-  background: linear-gradient(to bottom, #dedfe4 0%, #a1a3a3 40%);
+  background: #a1a3a3 40%;
+  /* height: auto !important; */
+  /*background: linear-gradient(to bottom, #dedfe4 0%, #a1a3a3 40%); */
 }
 h2,
 p {
-  color: #848484;
+  color: #000000;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.4px;
   line-height: 28px;
 }
 #home {
+  background: #a1a3a3 40%;
   max-width: 40rem;
+  /* width: 100%; */
   padding: 3rem 2rem;
   margin: 0 auto;
   height: 100%;
+}
+#gallery {
+  background: #fff;
+  display: block;
+  border: 1px solid #fff;
+  padding: 6rem 0 0 0;
+  overflow: none;
 }
 svg {
   border-radius: 60%;
