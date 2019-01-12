@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import Logo from './Logo'
 import Social from './Social'
-import '../styles/App'
 
-export default class App extends Component {
+export default class About extends Component {
   render() {
     return (
       <div id="home">
-        <Logo />
+        <h2>Hi I'm Jason</h2>
+        <p>Place Holder Text</p>
         <Social />
       </div>
     )
