@@ -1,11 +1,5 @@
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect
-} from 'react-router-dom'
+import { BrowserRouter, Route, Link, Switch, Redirect } from 'react-router-dom'
 import { stack as Menu } from 'react-burger-menu'
 import App from '../components/App'
 import About from '../components/AboutPage'
@@ -30,10 +24,10 @@ export default class AppRouter extends Component {
   }
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div id="outer-container">
           <Menu
-            width={180}
+            width={140}
             isOpen={false}
             pageWrapId={'page-wrap'}
             outerContainerId={'App'}
@@ -57,7 +51,7 @@ export default class AppRouter extends Component {
             <Redirect to="/" />
           </Switch>
         </div>
-      </Router>
+      </BrowserRouter>
     )
   }
 }
