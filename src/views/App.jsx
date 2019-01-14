@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Logo from './Logo'
-import Social from './Social'
+import Logo from '../components/Logo'
+import Social from '../components/Social'
 import '../styles/App'
 
 export default class App extends Component {
