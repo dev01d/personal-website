@@ -21,13 +21,15 @@
   "scripts": {
     "test": "echo '001100 010010 011110 100001 101101 110011'",
     "dev": "parcel public/index.html",
-    "build": "parcel build public/index.html && echo '/*    /index.html   200' > dist/_redirects",
+    "build": "parcel build public/index.html --detailed-report && echo '/*    /index.html   200' > dist/_redirects",
+    "build:dev": "parcel build public/index.html --experimental-scope-hoisting --detailed-report && node server/server.js",
     "build:env": "node ./src/scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "express": "^4.16.4",
     "parcel-bundler": "^1.11.0"
   }
 }
