@@ -22,7 +22,7 @@ export default class Sidebar extends Component {
   render() {
     return (
       <Menu
-        width={140}
+        width={160}
         isOpen={false}
         pageWrapId={'page-wrap'}
         outerContainerId={'App'}

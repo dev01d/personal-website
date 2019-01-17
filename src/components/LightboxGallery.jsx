@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
 import lightboxImages from './res/lightbox'
-import '../styles/App.css'
 
 export default class LightboxGallery extends Component {
   constructor() {

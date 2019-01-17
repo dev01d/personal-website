@@ -1,8 +1,7 @@
 import React from 'react'
-import '../styles/App'
 
 const Logo = ({ style }) => (
-  <svg viewBox="0 0 600 600" style={style} id="logo">
+  <svg viewBox="0 0 600 600" style={style}>
     <defs>
       <rect x="0" y="0" width="800" height="800" />
       <circle cx="300" cy="300" r="300" />
