@@ -37,6 +37,7 @@ export default class Social extends Component {
               alt="500px"
             />
           </li>
+          {/*
           <li>
             <a
               href="https://vimeo.com/jasonbehnke"
@@ -44,8 +45,8 @@ export default class Social extends Component {
               alt="vimeo"
             />
           </li>
+         */}
         </ul>
-        <p>&copy; 2015 - {this.state.date}</p>
       </div>
     )
   }
