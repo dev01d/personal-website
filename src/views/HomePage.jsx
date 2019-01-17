@@ -10,8 +10,7 @@ export default () => (
         WebkitAppearance: 'none',
         WebkitBoxShadow: '0 10px 15px rgba(0, 0, 0, 0.7)',
         MozBoxShadow: '0 10px 15px rgba(0, 0, 0, 0.7)',
-        boxShadow: '0 10px 15px rgba(0, 0, 0, 0.7)',
-        overflow: 'visible'
+        boxShadow: '0 10px 15px rgba(0, 0, 0, 0.7)'
       }}
     />
     <Social />

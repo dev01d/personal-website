@@ -1,6 +1,5 @@
 /*
 TODO: move to semUI
-TODO: Fix Safari box shadow weirdness
 */
 
 html,
@@ -21,7 +20,7 @@ p {
   background: #a1a3a3 40%;
   max-width: 40rem;
   /* width: 100%; */
-  padding: 10rem 1rem;
+  padding: 6rem 1rem;
   margin: 0 auto;
   height: 100%;
 }
