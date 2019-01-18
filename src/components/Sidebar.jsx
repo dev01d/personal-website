@@ -10,15 +10,9 @@ export default class Sidebar extends Component {
       menuOpen: false
     }
   }
-  handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen })
-  }
-  closeMenu() {
-    this.setState({ menuOpen: false })
-  }
-  toggleMenu() {
-    this.setState({ menuOpen: !this.state.menuOpen })
-  }
+  handleStateChange = state => this.setState({ menuOpen: state.isOpen })
+  closeMenu = () => this.setState({ menuOpen: false })
+  toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen })
   render() {
     return (
       <Menu

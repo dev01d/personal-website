@@ -12,28 +12,13 @@ export default class LightboxGallery extends Component {
     this.gotoNext = this.gotoNext.bind(this)
     this.gotoPrevious = this.gotoPrevious.bind(this)
   }
-  openLightbox(event, obj) {
-    this.setState({
-      currentImage: obj.index,
-      lightboxIsOpen: true
-    })
-  }
-  closeLightbox() {
-    this.setState({
-      currentImage: 0,
-      lightboxIsOpen: false
-    })
-  }
-  gotoPrevious() {
-    this.setState({
-      currentImage: this.state.currentImage - 1
-    })
-  }
-  gotoNext() {
-    this.setState({
-      currentImage: this.state.currentImage + 1
-    })
-  }
+  openLightbox = (event, obj) =>
+    this.setState({ currentImage: obj.index, lightboxIsOpen: true })
+  closeLightbox = () =>
+    this.setState({ currentImage: 0, lightboxIsOpen: false })
+  gotoPrevious = () =>
+    this.setState({ currentImage: this.state.currentImage - 1 })
+  gotoNext = () => this.setState({ currentImage: this.state.currentImage + 1 })
   render() {
     return (
       <div>
