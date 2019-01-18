@@ -38,7 +38,7 @@ body {
 /* Position and sizing of burger button */
 .bm-burger-button {
   align-content: left;
-  position: fixed;
+  position: relative;
   width: 32px;
   height: 28px;
   left: 32px;
