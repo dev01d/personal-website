@@ -1,10 +1,10 @@
 import React from 'react'
 import Social from '../components/Social'
+import AboutJson from '../components/AboutJson'
 
 export default () => (
-  <div id="home">
-    <h2>Hi I'm Jason</h2>
-    <p>Place Holder Text</p>
+  <div id="about">
+    <AboutJson />
     <Social />
   </div>
 )
