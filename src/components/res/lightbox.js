@@ -11,22 +11,22 @@ const lightboxImages = [
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/plu-tu.png',
-    width: 4,
+    width: 5,
     height: 3
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/highrock-full.jpg',
     width: 3,
-    height: 4
-  },
-  {
-    src: 'https://res.cloudinary.com/dev01d/full/snake-lake.jpg',
-    width: 3,
-    height: 4
+    height: 2
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/highrock-tall.jpg',
     width: 2,
+    height: 3
+  },
+  {
+    src: 'https://res.cloudinary.com/dev01d/full/snake-lake.jpg',
+    width: 4,
     height: 3
   },
   {
@@ -51,13 +51,13 @@ const lightboxImages = [
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/browns-rainer.png',
-    width: 3,
-    height: 4
+    width: 4,
+    height: 3
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/tok-deg.jpg',
-    width: 3,
-    height: 4
+    width: 4,
+    height: 5
   }
 ]
 
