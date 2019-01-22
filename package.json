@@ -13,7 +13,6 @@
     "react-burger-menu": "^2.5.4",
     "react-highlight": "^0.12.0",
     "react-dom": "^16.0.0",
-    "react-grid-gallery": "^0.5.3",
     "react-lightbox-component": "^1.2.1",
     "react-photo-gallery": "^6.3.0",
     "react-router-dom": "^4.3.1",
@@ -23,7 +22,7 @@
     "test": "echo '001100 010010 011110 100001 101101 110011'",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html --detailed-report && echo '/*    /index.html   200' > dist/_redirects",
-    "build:dev": "parcel build public/index.html --experimental-scope-hoisting --detailed-report && node server/server.js",
+    "build:dev": "parcel build public/index.html --detailed-report && node server/server.js",
     "build:env": "node ./src/scripts/create-env.js && parcel build public/index.html"
   },
   "devDependencies": {
