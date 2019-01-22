@@ -16,7 +16,7 @@ export default class Sidebar extends Component {
   render() {
     return (
       <Menu
-        width={160}
+        width={200}
         isOpen={false}
         pageWrapId={'page-wrap'}
         outerContainerId={'App'}

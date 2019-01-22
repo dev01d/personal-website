@@ -17,21 +17,21 @@ p {
   line-height: 28px;
 }
 #home {
-  max-width: 40rem;
+  max-width: 30rem;
   padding: 6rem 1rem;
   margin: 0 auto;
   height: 100%;
 }
 #about {
-  max-width: 40rem;
-  padding: 6rem 1rem;
+  max-width: 30rem;
+  padding: 4rem 1rem;
   margin: 0 auto;
   height: 100%;
 }
 .json {
   font-size: 16px;
-  font-weight: 600;
-  margin: 0 1rem;
+  /* font-weight: 600; */
+  padding: 0 1rem;
   border-radius: 10px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
 }
@@ -82,5 +82,8 @@ p {
 @media screen and (min-width: 35rem) {
   #home {
     padding: 2rem 2rem;
+  }
+  #about {
+    padding: 3rem 1rem;
   }
 }

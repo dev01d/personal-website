@@ -6,27 +6,28 @@ export default () => (
   <div>
     <Highlight className="json">
       {`
-    {
-      "Name": "Jason Behnke",
-      "Priorities" : [
-        "Code", "Climbing", "Photography"
-      ],
-      "Languages" : [
-        "HTML", "CSS", "JavaScript",
-        "Swift", "Python"
-      ],
-      "Frameworks" : [
-        "React", "NextJS", "Django"
-      ],
-      "Technology" : [
-        "Ansible", "Docker",
-        "Dokku", "Sentry"
-      ],
-      "Titles" : [
-        "SysAdmin",
-        "Full Stack Developer"
-      ]
-    }
+  {
+    "Name": "Jason Behnke",
+    "Priorities" : [
+      "Code", "Photography",
+      "Climbing"
+    ],
+    "Languages" : [
+      "HTML", "CSS", "JavaScript",
+      "Swift", "Python"
+    ],
+    "Frameworks" : [
+      "React", "NextJS", "Django"
+    ],
+    "Technology" : [
+      "Ansible", "Docker",
+      "Dokku", "Sentry"
+    ],
+    "Titles" : [
+      "Full Stack Developer"
+      "SysAdmin"
+    ]
+  }
     `}
     </Highlight>
   </div>
