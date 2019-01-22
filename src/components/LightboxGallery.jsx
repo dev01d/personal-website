@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Gallery from 'react-photo-gallery'
 import Lightbox from 'react-images'
 import lightboxImages from './res/lightbox'
+import galleryImages from './res/gallery'
 
 export default class LightboxGallery extends Component {
   constructor() {
@@ -23,7 +24,7 @@ export default class LightboxGallery extends Component {
     return (
       <div>
         <Gallery
-          photos={lightboxImages}
+          photos={galleryImages}
           margin={4}
           onClick={this.openLightbox}
         />
