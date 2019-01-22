@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import { stack as Menu } from 'react-burger-menu'
+import Menu from 'react-burger-menu/lib/menus/slide'
 import '../styles/Sidebar.css'
 
 export default class Sidebar extends Component {
