@@ -13,14 +13,14 @@ export default class Social extends Component {
             <a
               href="https://github.com/dev01d"
               className="fab fa-github"
-              alt="github"
+              alt="link to github.com"
             />
           </li>
           <li>
             <a
               href="mailto:contact@jasonbehnke.io?subject=Inquiry"
               className="far fa-envelope"
-              alt="email"
+              alt="link to email"
             />
           </li>
           <li>
@@ -34,7 +34,7 @@ export default class Social extends Component {
             <a
               href="https://500px.com/jasonbehnke"
               className="fab fa-500px"
-              alt="500px"
+              alt="link to 500px"
             />
           </li>
           {/*
