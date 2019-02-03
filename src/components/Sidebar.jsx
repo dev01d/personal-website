@@ -11,7 +11,7 @@ export default class Sidebar extends Component {
     }
   }
   handleMobileSidebar = () =>
-    window.innerWidth > 745 && window.DocumentTouch ? 250 : '100%'
+    window.innerWidth > 745 || window.DocumentTouch ? 250 : '100%'
   handleStateChange = state => this.setState({ menuOpen: state.isOpen })
   closeMenu = () => this.setState({ menuOpen: false })
   toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen })
