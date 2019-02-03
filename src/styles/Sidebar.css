@@ -58,7 +58,7 @@ body {
 .bm-menu {
   background: rgb(43, 43, 43);
   padding: 2.5em 1.5em 0;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -79,4 +79,10 @@ body {
 
 :focus {
   outline: none !important;
+}
+
+@media screen and (min-width: 40rem) {
+  .bm-menu {
+    font-size: 2rem;
+  }
 }
