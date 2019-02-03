@@ -1,7 +1,3 @@
-/*
-TODO: move to semUI
-*/
-
 html,
 body {
   height: 100%;
@@ -79,11 +75,17 @@ p {
   box-shadow: 0 10px 10px #56098a5b;
   overflow: visible;
 }
+
 @media screen and (min-width: 35rem) {
   #home {
     padding: 2rem 2rem;
   }
   #about {
     padding: 3rem 1rem;
+  }
+}
+@media screen and (min-width: 30rem) {
+  #gallery {
+    padding: 4rem 4rem;
   }
 }
