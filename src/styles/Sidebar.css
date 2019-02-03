@@ -3,13 +3,6 @@ body {
   margin: 0;
 }
 
-/* #App {
-  /* font-family: sans-serif; */
-
-/* Give app full page to work with
-  height: 100vh;
-} */
-
 #page-wrap {
   text-align: center;
   /* Prevent sidebar from showing a scrollbar on page */
@@ -30,8 +23,6 @@ body {
 .bm-item:hover {
   color: white;
 }
-
-/* The rest copied directly from react-burger-menu docs */
 
 /* Position and sizing of burger button */
 .bm-burger-button {
@@ -84,4 +75,8 @@ body {
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+:focus {
+  outline: none !important;
 }
