@@ -10,13 +10,15 @@ export default class Sidebar extends Component {
       menuOpen: false
     }
   }
+  handleMobileSidebar = () =>
+    window.innerWidth > 745 && window.DocumentTouch ? 250 : '100%'
   handleStateChange = state => this.setState({ menuOpen: state.isOpen })
   closeMenu = () => this.setState({ menuOpen: false })
   toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen })
   render() {
     return (
       <Menu
-        width={200}
+        width={this.handleMobileSidebar()}
         isOpen={false}
         pageWrapId={'page-wrap'}
         outerContainerId={'App'}
