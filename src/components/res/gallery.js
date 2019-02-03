@@ -37,15 +37,15 @@ const galleryImages = [
   },
   {
     src:
-      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/snake-ridge.jpg',
-    width: 4,
+      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/rowena.jpg',
+    width: 5,
     height: 3
   },
   {
     src:
-      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/rowena.jpg',
-    width: 3,
-    height: 4
+      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/snake-ridge.jpg',
+    width: 4,
+    height: 3
   },
   {
     src:
@@ -62,7 +62,7 @@ const galleryImages = [
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/wachlella-le-fe.jpg',
-    width: 4,
+    width: 5,
     height: 3
   },
   {
@@ -75,7 +75,7 @@ const galleryImages = [
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tok-deg-th.jpg',
     width: 4,
-    height: 5
+    height: 3
   },
   {
     src:
@@ -86,8 +86,8 @@ const galleryImages = [
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/christinefalls.jpg',
-    width: 4,
-    height: 3
+    width: 3,
+    height: 5
   },
   {
     src:
@@ -104,7 +104,7 @@ const galleryImages = [
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tacoma-le.jpg',
-    width: 4,
+    width: 5,
     height: 3
   },
   {
@@ -128,7 +128,7 @@ const galleryImages = [
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/lavender-2.png',
-    width: 4,
+    width: 5,
     height: 3
   },
   {
@@ -152,15 +152,15 @@ const galleryImages = [
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/toketee-pillar.jpg',
-    width: 4,
-    height: 3
+    width: 3,
+    height: 5
   },
   {
     src:
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cloud-view.jpg',
     width: 4,
     height: 3
-  },
+  }
   // {
   //   src:
   //     'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/outfitters.jpg',

@@ -12,9 +12,6 @@ const lightboxImages = [
     src: 'https://res.cloudinary.com/dev01d/full/highrock-full.jpg'
   },
   {
-    src: 'https://res.cloudinary.com/dev01d/full/snake-ridge.jpg'
-  },
-  {
     src: 'https://res.cloudinary.com/dev01d/full/highrock-tall.jpg'
   },
   {
@@ -22,6 +19,9 @@ const lightboxImages = [
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/rowena.jpg'
+  },
+  {
+    src: 'https://res.cloudinary.com/dev01d/full/snake-ridge.jpg'
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/alder-s.jpg'
