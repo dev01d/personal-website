@@ -18,9 +18,9 @@ export default class Social extends Component {
           </li>
           <li>
             <a
-              href="mailto:contact@jasonbehnke.io?subject=Inquiry"
+              href="mailt&#111;&#58;con%74act&#64;&#106;&#97;sonbeh&#37;6&#69;ke&#46;&#105;o'>&#99;o&#110;tact&#64;jaso&#110;behnk&#101;&#46;io"
               className="far fa-envelope"
-              alt="link to email"
+              alt="send me an email"
             />
           </li>
           <li>
@@ -37,15 +37,6 @@ export default class Social extends Component {
               alt="link to 500px"
             />
           </li>
-          {/*
-          <li>
-            <a
-              href="https://vimeo.com/jasonbehnke"
-              className="fab fa-vimeo-v"
-              alt="vimeo"
-            />
-          </li>
-         */}
         </ul>
       </div>
     )
