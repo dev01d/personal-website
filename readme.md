@@ -1,4 +1,4 @@
-![Uptime](https://img.shields.io/uptimerobot/ratio/m779994490-c9405c7893773347f4c74fda.svg?style=flat) [![Build](https://img.shields.io/travis/dev01d/personal-website/V2.svg?style=flat)](https://travis-ci.org/dev01d/personal-website)
+[![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m779994490-c9405c7893773347f4c74fda.svg)](https://status.jasonbehnke.io) [![Build](https://img.shields.io/travis/dev01d/personal-website.svg?style=flat)](https://travis-ci.org/dev01d/personal-website)
 
 # per·son·al web·site
 
@@ -37,42 +37,41 @@ yarn build
 .
 ├── package.json
 ├── public
-│   ├── assets
-│   │   ├── android-chrome-96x96.png
-│   │   ├── apple-touch-icon.png
-│   │   ├── browserconfig.xml
-│   │   ├── favicon-16x16.png
-│   │   ├── favicon-32x32.png
-│   │   ├── mstile-150x150.png
-│   │   ├── safari-pinned-tab.svg
-│   │   └── site.webmanifest
-│   ├── favicon.ico
-│   └── index.html
+│   ├── assets
+│   │   ├── android-chrome-96x96.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── browserconfig.xml
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── mstile-150x150.png
+│   │   ├── safari-pinned-tab.svg
+│   │   └── site.webmanifest
+│   ├── favicon.ico
+│   └── index.html
 ├── readme.md
 ├── server
-│   ├── readme.md
-│   └── server.js
+│   ├── readme.md
+│   └── server.js
 ├── src
-│   ├── components
-│   │   ├── AboutJson.jsx
-│   │   ├── LightboxGallery.jsx
-│   │   ├── Logo.jsx
-│   │   ├── res
-│   │   │   ├── gallery.js
-│   │   │   └── lightbox.js
-│   │   ├── Sidebar.jsx
-│   │   └── Social.jsx
-│   ├── index.js
-│   ├── router
-│   │   └── AppRouter.jsx
-│   ├── styles
-│   │   ├── App.css
-│   │   ├── index.css
-│   │   └── Sidebar.css
-│   └── views
-│       ├── AboutPage.jsx
-│       ├── App.jsx
-│       ├── GalleryPage.jsx
-│       └── HomePage.jsx
+│   ├── components
+│   │   ├── AboutJson.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Logo.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Social.jsx
+│   │   └── res
+│   │       ├── gallery.js
+│   │       └── lightbox.js
+│   ├── index.js
+│   ├── router
+│   │   └── AppRouter.jsx
+│   ├── styles
+│   │   ├── App.css
+│   │   ├── Sidebar.css
+│   │   └── index.css
+│   └── views
+│       ├── AboutPage.jsx
+│       ├── GalleryPage.jsx
+│       └── HomePage.jsx
 └── yarn.lock
 ```
