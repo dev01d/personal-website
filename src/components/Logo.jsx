@@ -22,7 +22,7 @@ const Logo = ({ style }) => (
                 cy="300"
                 r="300"
               />
-              <g strokeWidth="1" fill="none" fillRule="evenodd">
+              <g strokeWidth="1" fill="none" fillRule="nonzero">
                 <mask fill="white">
                   <use xlinkHref="#path-3" />
                 </mask>
