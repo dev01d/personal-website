@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render AboutPage correctly 1`] = `
+<div
+  id="about"
+>
+  <_default />
+  <Social />
+</div>
+`;
