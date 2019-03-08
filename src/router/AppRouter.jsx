@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import ReactGA from 'react-ga'
+import createHistory from 'history/createBrowserHistory'
+import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
 import Home from '../views/HomePage'
 import About from '../views/AboutPage'
 import Gallery from '../views/GalleryPage'
 
+const history = createHistory()
+history.listen(location => {
+  ReactGA.set({ page: location.pathname })
+  ReactGA.pageview(location.pathname)
+})
+
 export default class AppRouter extends Component {
+  componentDidMount() {
+    ReactGA.pageview(window.location.pathname)
+  }
   render() {
     return (
-      <BrowserRouter>
+      <Router history={history}>
         <div id="outer-container">
           <Sidebar />
           <Switch>
@@ -18,7 +29,7 @@ export default class AppRouter extends Component {
             <Redirect to="/" />
           </Switch>
         </div>
-      </BrowserRouter>
+      </Router>
     )
   }
 }
