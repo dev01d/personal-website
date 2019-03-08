@@ -10,7 +10,11 @@ if (process.env.NODE_ENV === 'production') {
   Sentry.init({
     dsn: process.env.SENTRY_DSN
   })
-  ReactGA.initialize(process.env.GA_CODE)
+  ReactGA.initialize(process.env.GA_CODE, {
+    gaOptions: {
+      siteSpeedSampleRate: 100
+    }
+  })
 }
 
 ReactDOM.render(<AppRouter id="page-wrap" />, document.getElementById('app'))
