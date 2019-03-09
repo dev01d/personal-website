@@ -1,0 +1,65 @@
+{
+  "name": "jasonbehnke.io",
+  "version": "2.0.0",
+  "description": "Personal Website",
+  "main": "dist/index.html",
+  "repository": "https://github.com/dev01d/personal-website.git",
+  "author": "Jason Behnke <contact@jasonbehnke.io>",
+  "homepage": "https://jasonbehnke.io",
+  "license": "MIT",
+  "dependencies": {
+    "@sentry/browser": "^4.4.2",
+    "react": "^16.0.0",
+    "react-burger-menu": "^2.5.4",
+    "react-dom": "^16.0.0",
+    "react-ga": "^2.5.7",
+    "react-highlight": "^0.12.0",
+    "react-images": "^0.5.19",
+    "react-lightbox-component": "^1.2.1",
+    "react-photo-gallery": "^6.3.0",
+    "react-router-dom": "^4.3.1",
+    "src": "^1.1.2"
+  },
+  "scripts": {
+    "test": "jest",
+    "dev": "parcel public/index.html",
+    "build": "parcel build public/index.html --detailed-report && echo '/*    /index.html   200' > dist/_redirects",
+    "build:dev": "parcel build public/index.html --detailed-report && node server/server.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "transform-class-properties"
+    ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/src/tests/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      ".+\\.(css|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-jest": "^24.3.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "3.0.1",
+    "express": "^4.16.4",
+    "jest": "^24.3.1",
+    "jest-transform-stub": "^2.0.0",
+    "parcel-bundler": "^1.11.0"
+  }
+}
