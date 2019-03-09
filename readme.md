@@ -20,6 +20,9 @@
 # Install all of the things
 yarn install
 
+# To run tests
+yarn test
+
 # On the fly compilation
 yarn dev
 
@@ -37,41 +40,50 @@ yarn build
 .
 ├── package.json
 ├── public
-│   ├── assets
-│   │   ├── android-chrome-96x96.png
-│   │   ├── apple-touch-icon.png
-│   │   ├── browserconfig.xml
-│   │   ├── favicon-16x16.png
-│   │   ├── favicon-32x32.png
-│   │   ├── mstile-150x150.png
-│   │   ├── safari-pinned-tab.svg
-│   │   └── site.webmanifest
-│   ├── favicon.ico
-│   └── index.html
+│   ├── assets
+│   │   ├── android-chrome-96x96.png
+│   │   ├── apple-touch-icon.png
+│   │   ├── browserconfig.xml
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── mstile-150x150.png
+│   │   ├── safari-pinned-tab.svg
+│   │   └── site.webmanifest
+│   ├── favicon.ico
+│   └── index.html
 ├── readme.md
 ├── server
-│   ├── readme.md
-│   └── server.js
+│   ├── readme.md
+│   └── server.js
 ├── src
-│   ├── components
-│   │   ├── AboutJson.jsx
-│   │   ├── Gallery.jsx
-│   │   ├── Logo.jsx
-│   │   ├── Sidebar.jsx
-│   │   ├── Social.jsx
-│   │   └── res
-│   │       ├── gallery.js
-│   │       └── lightbox.js
-│   ├── index.js
-│   ├── router
-│   │   └── AppRouter.jsx
-│   ├── styles
-│   │   ├── App.css
-│   │   ├── Sidebar.css
-│   │   └── index.css
-│   └── views
-│       ├── AboutPage.jsx
-│       ├── GalleryPage.jsx
-│       └── HomePage.jsx
+│   ├── components
+│   │   ├── AboutJson.jsx
+│   │   ├── Gallery.jsx
+│   │   ├── Logo.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── Social.jsx
+│   │   └── res
+│   │       ├── gallery.js
+│   │       └── lightbox.js
+│   ├── index.js
+│   ├── router
+│   │   └── AppRouter.jsx
+│   ├── styles
+│   │   ├── App.css
+│   │   ├── Sidebar.css
+│   │   └── index.css
+│   ├── tests
+│   │   ├── AboutPage.test.jsx
+│   │   ├── GalleryPage.test.jsx
+│   │   ├── HomePage.test.jsx
+│   │   ├── __snapshots__
+│   │   │   ├── AboutPage.test.jsx.snap
+│   │   │   ├── GalleryPage.test.jsx.snap
+│   │   │   └── HomePage.test.jsx.snap
+│   │   └── setupTests.js
+│   └── views
+│       ├── AboutPage.jsx
+│       ├── GalleryPage.jsx
+│       └── HomePage.jsx
 └── yarn.lock
 ```
