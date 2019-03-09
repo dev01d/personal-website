@@ -33,8 +33,7 @@ p {
 }
 #gallery {
   display: block;
-  padding: 4rem 0 0 0;
-  overflow: none;
+  padding: 4rem 1rem 0 1rem;
 }
 .social-icon ul {
   padding-right: 20px;
@@ -78,10 +77,10 @@ p {
 
 @media screen and (min-width: 35rem) {
   #home {
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
   }
   #about {
-    padding: 3rem 1rem;
+    padding: 3rem 0rem;
   }
 }
 @media screen and (min-width: 30rem) {
