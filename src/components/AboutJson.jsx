@@ -8,23 +8,27 @@ export default () => (
       {`
   {
     "Name": "Jason Behnke",
-    "Priorities" : [
-      "Code", "Photography",
+    "Priorities": [
+      "Code",
+      "Photography",
       "Climbing"
     ],
-    "Languages" : [
-      "HTML", "CSS", "JavaScript",
-      "Swift", "Python"
+    "Languages": [
+      "JavaScript",
+      "Swift",
+      "Python"
     ],
-    "Frameworks" : [
-      "React", "NextJS", "Django"
+    "Frameworks": [
+      "React",
+      "NextJS",
     ],
-    "Technology" : [
-      "Ansible", "Docker",
-      "Dokku", "Sentry"
+    "Technology": [
+      "Linux",
+      "Ansible",
+      "Docker"
     ],
-    "Titles" : [
-      "Full Stack Developer"
+    "Titles": [
+      "Full Stack Developer",
       "SysAdmin"
     ]
   }
