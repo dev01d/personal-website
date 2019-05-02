@@ -104,13 +104,13 @@ const galleryImages = [
   },
   {
     src:
-      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tok-deg-th.jpg',
+      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tok-deg.jpg',
     width: 4,
     height: 3
   },
   {
     src:
-      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/kiwanda-th.jpg',
+      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/kiwanda.jpg',
     width: 4,
     height: 3
   },
