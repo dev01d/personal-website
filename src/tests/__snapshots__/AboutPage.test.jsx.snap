@@ -1,10 +1,90 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render AboutPage correctly 1`] = `
-<div
-  id="about"
->
-  <_default />
-  <Social />
-</div>
+<_default>
+  <div
+    id="about"
+  >
+    <_default>
+      <div>
+        <Highlight
+          className="json"
+          element={null}
+          innerHTML={false}
+        >
+          <pre>
+            <code
+              className="json"
+            >
+              
+  {
+    "Name": "Jason Behnke",
+    "Priorities": [
+      "Code",
+      "Photography",
+      "Climbing"
+    ],
+    "Languages": [
+      "JavaScript",
+      "Swift",
+      "Python"
+    ],
+    "Frameworks": [
+      "React",
+      "NextJS",
+    ],
+    "Technology": [
+      "Linux",
+      "Ansible",
+      "Docker"
+    ],
+    "Titles": [
+      "Full Stack Developer",
+      "SysAdmin"
+    ]
+  }
+    
+            </code>
+          </pre>
+        </Highlight>
+      </div>
+    </_default>
+    <Social>
+      <div
+        className="social-icon"
+      >
+        <ul>
+          <li>
+            <a
+              alt="link to github.com"
+              className="fab fa-github"
+              href="https://github.com/dev01d"
+            />
+          </li>
+          <li>
+            <a
+              alt="send me an email"
+              className="far fa-envelope"
+              href="mailto:contact@jasonbehnke.io"
+            />
+          </li>
+          <li>
+            <a
+              alt="link to instagram"
+              className="fab fa-instagram"
+              href="https://instagram.com/jason.behnke"
+            />
+          </li>
+          <li>
+            <a
+              alt="link to 500px"
+              className="fab fa-500px"
+              href="https://500px.com/jasonbehnke"
+            />
+          </li>
+        </ul>
+      </div>
+    </Social>
+  </div>
+</_default>
 `;

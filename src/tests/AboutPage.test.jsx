@@ -1,8 +1,8 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount } from 'enzyme'
 import AboutPage from '../views/AboutPage'
 
 test('should render AboutPage correctly', () => {
-  const wrapper = shallow(<AboutPage />)
+  const wrapper = mount(<AboutPage />)
   expect(wrapper).toMatchSnapshot()
 })
