@@ -1,8 +1,8 @@
 import React from 'react'
-import { shallow } from 'enzyme'
+import { mount } from 'enzyme'
 import HomePage from '../views/HomePage'
 
 test('should render HomePage correctly', () => {
-  const wrapper = shallow(<HomePage />)
+  const wrapper = mount(<HomePage />)
   expect(wrapper).toMatchSnapshot()
 })

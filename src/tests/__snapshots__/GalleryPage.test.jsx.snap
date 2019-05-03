@@ -1,10 +1,356 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render GalleryPage correctly 1`] = `
-<div
-  id="gallery"
->
-  <LightboxGallery />
-  <Social />
-</div>
+exports[`should render Full GalleryPage correctly 1`] = `
+<_default>
+  <div
+    id="gallery"
+  >
+    <LightboxGallery>
+      <div>
+        <Gallery
+          direction="row"
+          margin={4}
+          onClick={[Function]}
+          photos={
+            Array [
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cannon-north.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/DSC_0152-3.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/2_8_2019.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/boat-mount2.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/DSC_0514.jpg",
+                "width": 2,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/dt-salem.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/DSC_0395.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 5,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/highrock-tall.jpg",
+                "width": 3,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/highrock-full.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 2,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/plu-tu.jpg",
+                "width": 3,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/snake-lake.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/rowena.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/snake-ridge.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/alder-s.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb//twin-forrest.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/wachlella-le-fe.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/browns-rainer.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tok-deg.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/kiwanda.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 5,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/christinefalls.jpg",
+                "width": 3,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/commerce-st.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/toketee-le.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/tacoma-le.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/rainer-fe.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/dt.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/sis-spire-2.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/lavender-2.jpg",
+                "width": 5,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cannon-orange.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 4,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/DSC_1020.jpg",
+                "width": 3,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/rainer.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/punchbowl.jpg",
+                "width": 4,
+              },
+              Object {
+                "height": 5,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/toketee-pillar.jpg",
+                "width": 3,
+              },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cloud-view.jpg",
+                "width": 4,
+              },
+            ]
+          }
+        >
+          <div>
+             
+          </div>
+        </Gallery>
+        <Lightbox
+          backdropClosesModal={true}
+          closeButtonTitle="Close (Esc)"
+          currentImage={0}
+          enableKeyboardInput={true}
+          imageCountSeparator=" of "
+          images={
+            Array [
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/cannon-north.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/DSC_0152-3.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/2_8_2019.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/boat-mount.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/DSC_0514.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/dt-salem.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/DSC_0395.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/highrock-tall.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/highrock-full.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/plu-tu.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/snake-lake.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/rowena.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/snake-ridge.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/alder-s.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/twin-forrest.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/wachlella-le-fe.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/browns-rainer.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/tok-deg.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/kiwanda.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/christinefalls.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/commerce-st.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/toketee-le.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/tacoma-le.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/rainer-fe.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/dt.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/sis-spire-2.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/lavender-2.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/cannon-orange.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/DSC_1020.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/rainer.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/punchbowl.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/toketee-pillar.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/cloud-view.png",
+              },
+            ]
+          }
+          leftArrowTitle="Previous (Left arrow key)"
+          onClickNext={[Function]}
+          onClickPrev={[Function]}
+          onClickShowNextImage={true}
+          onClose={[Function]}
+          preloadNextImage={true}
+          preventScroll={true}
+          rightArrowTitle="Next (Right arrow key)"
+          showCloseButton={true}
+          showImageCount={true}
+          spinner={[Function]}
+          spinnerColor="white"
+          spinnerSize={100}
+          theme={Object {}}
+          thumbnailOffset={2}
+          width={1024}
+        >
+          <Portal />
+        </Lightbox>
+      </div>
+    </LightboxGallery>
+    <Social>
+      <div
+        className="social-icon"
+      >
+        <ul>
+          <li>
+            <a
+              alt="link to github.com"
+              className="fab fa-github"
+              href="https://github.com/dev01d"
+            />
+          </li>
+          <li>
+            <a
+              alt="send me an email"
+              className="far fa-envelope"
+              href="mailto:contact@jasonbehnke.io"
+            />
+          </li>
+          <li>
+            <a
+              alt="link to instagram"
+              className="fab fa-instagram"
+              href="https://instagram.com/jason.behnke"
+            />
+          </li>
+          <li>
+            <a
+              alt="link to 500px"
+              className="fab fa-500px"
+              href="https://500px.com/jasonbehnke"
+            />
+          </li>
+        </ul>
+      </div>
+    </Social>
+  </div>
+</_default>
 `;
