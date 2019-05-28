@@ -197,13 +197,13 @@ const galleryImages = [
       'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cloud-view.jpg',
     width: 4,
     height: 3
+  },
+  {
+    src:
+      'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/outfitters.jpg',
+    width: 4,
+    height: 3
   }
-  // {
-  //   src:
-  //     'https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/outfitters.jpg',
-  //   width: 4,
-  //   height: 3
-  // }
 ]
 
 export default galleryImages

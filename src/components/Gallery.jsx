@@ -26,6 +26,7 @@ export default class LightboxGallery extends Component {
         <Gallery
           photos={galleryImages}
           margin={4}
+          direction={'column'}
           onClick={this.openLightbox}
         />
         <Lightbox

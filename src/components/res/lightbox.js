@@ -97,10 +97,10 @@ const lightboxImages = [
   },
   {
     src: 'https://res.cloudinary.com/dev01d/full/cloud-view.png'
+  },
+  {
+    src: 'https://res.cloudinary.com/dev01d/full/outfitters.png'
   }
-  // {
-  //   src: 'https://res.cloudinary.com/dev01d/full/outfitters.png'
-  // }
 ]
 
 export default lightboxImages
