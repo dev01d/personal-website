@@ -8,7 +8,7 @@ exports[`should render Full GalleryPage correctly 1`] = `
     <LightboxGallery>
       <div>
         <Gallery
-          direction="row"
+          direction="column"
           margin={4}
           onClick={[Function]}
           photos={
@@ -178,8 +178,14 @@ exports[`should render Full GalleryPage correctly 1`] = `
                 "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/cloud-view.jpg",
                 "width": 4,
               },
+              Object {
+                "height": 3,
+                "src": "https://res.cloudinary.com/dev01d/image/upload/q_auto,f_auto/thumb/outfitters.jpg",
+                "width": 4,
+              },
             ]
           }
+          targetRowHeight={300}
         >
           <div>
              
@@ -291,6 +297,9 @@ exports[`should render Full GalleryPage correctly 1`] = `
               },
               Object {
                 "src": "https://res.cloudinary.com/dev01d/full/cloud-view.png",
+              },
+              Object {
+                "src": "https://res.cloudinary.com/dev01d/full/outfitters.png",
               },
             ]
           }
