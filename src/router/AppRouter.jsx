@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import ReactGA from 'react-ga'
-import createHistory from 'history/createBrowserHistory'
+import { createBrowserHistory } from 'history'
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
 import Home from '../views/HomePage'
 import About from '../views/AboutPage'
 import Gallery from '../views/GalleryPage'
 
-const history = createHistory()
+const history = createBrowserHistory()
 history.listen(location => {
   ReactGA.set({ page: location.pathname })
   ReactGA.pageview(location.pathname)
