@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@sentry/browser": "^5.5.0",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.8.6",

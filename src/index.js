@@ -3,6 +3,7 @@ import ReactGA from 'react-ga'
 import ReactDOM from 'react-dom'
 import * as Sentry from '@sentry/browser'
 import AppRouter from './router/AppRouter'
+import 'normalize.css/normalize.css'
 import './styles/App.css'
 import './styles/index.css'
 
