@@ -20,4 +20,4 @@ deploy:
     branch: master
 
 notifications:
-  slack: $SLACK
+  slack: dev01d:6JsAqiB8miF7jaZO9hkho5YZ
