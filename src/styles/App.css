@@ -13,16 +13,24 @@ p {
   line-height: 28px;
 }
 #home {
+  /** Size of SVG */
   max-width: 30rem;
   padding: 6rem 1rem;
-  margin: 0 auto;
-  height: 100%;
+  margin: auto;
+  /** Centered X&&Y*/
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
 #about {
+  /** Size of code block */
   max-width: 30rem;
   padding: 4rem 1rem;
   margin: 0 auto;
-  height: 100%;
+  /** Centered X&&Y*/
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
 .json {
   font-size: 16px;
@@ -74,14 +82,7 @@ p {
   overflow: visible;
 }
 
-@media screen and (min-width: 35rem) {
-  #home {
-    padding: 3rem 2rem;
-  }
-  #about {
-    padding: 3rem 0rem;
-  }
-}
+/* Desktop */
 @media screen and (min-width: 30rem) {
   #gallery {
     padding: 4rem 4rem;
