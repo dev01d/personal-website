@@ -6,7 +6,7 @@ body {
 }
 h2,
 p {
-  color: #000000;
+  color: #000;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.4px;
@@ -44,9 +44,9 @@ p {
   display: inline-block;
 }
 .social-icon li a {
-  background: #000000;
+  background: #000;
   border-radius: 50%;
-  color: #ffffff;
+  color: #fff;
   font-size: 36px;
   width: 52px;
   height: 52px;
