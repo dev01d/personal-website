@@ -4,7 +4,6 @@ body,
 #app,
 #outer-container {
   height: 100%;
-  min-height: 100%;
   margin: 0;
   background: #fff;
 }
@@ -87,6 +86,14 @@ p {
   overflow: visible;
 }
 
+.center {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: calc(50%-50%px / 2);
+  left: calc(50%-50%px / 2);
+}
+
 /* Desktop */
 @media screen and (min-width: 30rem) {
   #about {
@@ -100,5 +107,15 @@ p {
 @media screen and (min-width: 30rem) {
   #gallery {
     padding: 4rem 4rem;
+  }
+}
+
+/** Dark mode */
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #app,
+  #outer-container {
+    background: rgb(53, 53, 53);
   }
 }
