@@ -36,6 +36,7 @@
 .bm-burger-bars {
   background: #373a47;
   background: #000;
+  border-radius: 10%;
 }
 
 /* Position and sizing of clickable cross button */
