@@ -13,6 +13,7 @@
   color: #d1d1d1;
   transition: color 0.1s;
 }
+
 /* Change color on hover */
 .bm-item:hover {
   color: white;
@@ -44,6 +45,7 @@
   height: 48px;
   width: 48px;
 }
+
 /* Color/shape of close button cross */
 .bm-cross {
   background: #bdc3c7;
@@ -79,5 +81,12 @@
 @media screen and (min-width: 45.5rem) {
   .bm-menu {
     font-size: 2rem;
+  }
+}
+
+/** Dark mode */
+@media (prefers-color-scheme: dark) {
+  .bm-burger-bars {
+    background: #bdc3c7;
   }
 }

@@ -4,7 +4,6 @@ body,
 #app,
 #outer-container {
   height: 100%;
-  min-height: 100%;
   margin: 0;
   background: #fff;
 }
@@ -100,5 +99,15 @@ p {
 @media screen and (min-width: 30rem) {
   #gallery {
     padding: 4rem 4rem;
+  }
+}
+
+/** Dark mode */
+@media (prefers-color-scheme: dark) {
+  html,
+  body,
+  #app,
+  #outer-container {
+    background: rgb(53, 53, 53);
   }
 }
