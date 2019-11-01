@@ -86,14 +86,6 @@ p {
   overflow: visible;
 }
 
-.center {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: calc(50%-50%px / 2);
-  left: calc(50%-50%px / 2);
-}
-
 /* Desktop */
 @media screen and (min-width: 30rem) {
   #about {
