@@ -75,7 +75,7 @@
   outline: none !important;
 }
 
-@media screen and (min-width: 40rem) {
+@media screen and (min-width: 45.5rem) {
   .bm-menu {
     font-size: 2rem;
   }
