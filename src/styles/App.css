@@ -1,7 +1,11 @@
+/** Need #app & #outer-container to make the div present 100% because React for reasons I don't understand right now */
 html,
-body {
+body,
+#app,
+#outer-container {
   height: 100%;
   min-height: 100%;
+  margin: 0;
   background: #fff;
 }
 h2,
