@@ -7,14 +7,6 @@ body,
   margin: 0;
   background: #fff;
 }
-h2,
-p {
-  color: #000;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.4px;
-  line-height: 28px;
-}
 #home {
   /** Size of SVG */
   max-width: 30rem;
