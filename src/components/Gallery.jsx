@@ -50,10 +50,10 @@ export default function LightboxGallery() {
             <Carousel
               closeOnBackdropClick={true}
               currentIndex={currentImage}
-              views={lightboxImages.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
+              views={lightboxImages.map(image => ({
+                ...image,
+                srcset: image.srcSet,
+                caption: image.title
               }))}
             />
           </Modal>
