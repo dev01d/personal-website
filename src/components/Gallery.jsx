@@ -48,6 +48,7 @@ export default function LightboxGallery() {
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox} styles={style}>
             <Carousel
+              closeOnBackdropClick={true}
               currentIndex={currentImage}
               views={lightboxImages.map(x => ({
                 ...x,
