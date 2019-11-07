@@ -15,6 +15,27 @@ export default function LightboxGallery() {
     setCurrentImage(0)
     setViewerIsOpen(false)
   }
+
+  const style = {
+    blanket: base => ({
+      ...base,
+      zIndex: 1100
+    }),
+    positioner: base => ({
+      ...base,
+      zIndex: 1100
+    }),
+    dialog: (base, state) => ({
+      ...base,
+      zIndex: 1100,
+      maxWidth: state.isFullscreen ? 1280 : 840
+    }),
+    view: base => ({
+      ...base,
+      overflow: 'hidden'
+    })
+  }
+
   return (
     <div>
       <Gallery
@@ -25,7 +46,7 @@ export default function LightboxGallery() {
       />
       <ModalGateway>
         {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
+          <Modal onClose={closeLightbox} styles={style}>
             <Carousel
               currentIndex={currentImage}
               views={lightboxImages.map(x => ({
