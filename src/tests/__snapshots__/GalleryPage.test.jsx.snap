@@ -191,137 +191,20 @@ exports[`should render Full GalleryPage correctly 1`] = `
              
           </div>
         </Gallery>
-        <Lightbox
-          backdropClosesModal={true}
-          closeButtonTitle="Close (Esc)"
-          currentImage={0}
-          enableKeyboardInput={true}
-          imageCountSeparator=" of "
-          images={
-            Array [
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/cannon-north.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/DSC_0152-3.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/2_8_2019.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/boat-mount.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/DSC_0514.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/dt-salem.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/DSC_0395.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/highrock-tall.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/highrock-full.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/plu-tu.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/snake-lake.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/rowena.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/snake-ridge.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/alder-s.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/twin-forrest.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/wachlella-le-fe.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/browns-rainer.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/tok-deg.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/kiwanda.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/christinefalls.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/commerce-st.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/toketee-le.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/tacoma-le.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/rainer-fe.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/dt.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/sis-spire-2.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/lavender-2.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/cannon-orange.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/DSC_1020.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/rainer.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/punchbowl.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/toketee-pillar.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/cloud-view.png",
-              },
-              Object {
-                "src": "https://res.cloudinary.com/dev01d/full/outfitters.png",
-              },
-            ]
-          }
-          leftArrowTitle="Previous (Left arrow key)"
-          onClickNext={[Function]}
-          onClickPrev={[Function]}
-          onClickShowNextImage={true}
-          onClose={[Function]}
-          preloadNextImage={true}
-          preventScroll={true}
-          rightArrowTitle="Next (Right arrow key)"
-          showCloseButton={true}
-          showImageCount={true}
-          spinner={[Function]}
-          spinnerColor="white"
-          spinnerSize={100}
-          theme={Object {}}
-          thumbnailOffset={2}
-          width={1024}
+        <ModalGateway
+          target={<body />}
         >
-          <Portal />
-        </Lightbox>
+          <Portal
+            containerInfo={<body />}
+          >
+            <TransitionGroup
+              childFactory={[Function]}
+              component={[Function]}
+            >
+              <FirstChild />
+            </TransitionGroup>
+          </Portal>
+        </ModalGateway>
       </div>
     </LightboxGallery>
     <Social>
