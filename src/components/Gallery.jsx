@@ -28,7 +28,7 @@ export default function LightboxGallery() {
     dialog: (base, state) => ({
       ...base,
       zIndex: 1100,
-      maxWidth: state.isFullscreen ? 1280 : 840
+      maxWidth: state.isFullscreen ? 1280 : 960
     }),
     view: base => ({
       ...base,
