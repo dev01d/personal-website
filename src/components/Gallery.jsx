@@ -1,44 +1,42 @@
-import React, { Component } from 'react'
+import React, { useState, useCallback } from 'react'
 import Gallery from 'react-photo-gallery'
-import Lightbox from 'react-images'
+import Carousel, { Modal, ModalGateway } from 'react-images'
 import lightboxImages from './res/lightbox'
 import galleryImages from './res/gallery'
 
-export default class LightboxGallery extends Component {
-  constructor() {
-    super()
-    this.state = { currentImage: 0 }
-    this.closeLightbox = this.closeLightbox.bind(this)
-    this.openLightbox = this.openLightbox.bind(this)
-    this.gotoNext = this.gotoNext.bind(this)
-    this.gotoPrevious = this.gotoPrevious.bind(this)
+export default function LightboxGallery() {
+  const [currentImage, setCurrentImage] = useState(0)
+  const [viewerIsOpen, setViewerIsOpen] = useState(false)
+  const openLightbox = useCallback((event, { photo, index }) => {
+    setCurrentImage(index)
+    setViewerIsOpen(true)
+  }, [])
+  const closeLightbox = () => {
+    setCurrentImage(0)
+    setViewerIsOpen(false)
   }
-  openLightbox = (event, obj) =>
-    this.setState({ currentImage: obj.index, lightboxIsOpen: true })
-  closeLightbox = () =>
-    this.setState({ currentImage: 0, lightboxIsOpen: false })
-  gotoPrevious = () =>
-    this.setState({ currentImage: this.state.currentImage - 1 })
-  gotoNext = () => this.setState({ currentImage: this.state.currentImage + 1 })
-  render() {
-    return (
-      <div>
-        <Gallery
-          photos={galleryImages}
-          margin={4}
-          direction={'column'}
-          onClick={this.openLightbox}
-        />
-        <Lightbox
-          images={lightboxImages}
-          backdropClosesModal={true}
-          onClickNext={this.gotoNext}
-          onClose={this.closeLightbox}
-          onClickPrev={this.gotoPrevious}
-          isOpen={this.state.lightboxIsOpen}
-          currentImage={this.state.currentImage}
-        />
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Gallery
+        photos={galleryImages}
+        margin={4}
+        direction={'column'}
+        onClick={openLightbox}
+      />
+      <ModalGateway>
+        {viewerIsOpen ? (
+          <Modal onClose={closeLightbox}>
+            <Carousel
+              currentIndex={currentImage}
+              views={lightboxImages.map(x => ({
+                ...x,
+                srcset: x.srcSet,
+                caption: x.title
+              }))}
+            />
+          </Modal>
+        ) : null}
+      </ModalGateway>
+    </div>
+  )
 }
