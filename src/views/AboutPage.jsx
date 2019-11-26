@@ -5,6 +5,6 @@ import AboutJson from '../components/AboutJson'
 export default () => (
   <div id="about">
     <AboutJson />
-    {/* <Social /> */}
+    <Social />
   </div>
 )
