@@ -21,7 +21,6 @@ deploy:
 
 notifications:
   slack: dev01d:6JsAqiB8miF7jaZO9hkho5YZ
-    if: branch = master
     on_success: change
     on_falure: always
     on_pull_requests: false
