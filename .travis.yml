@@ -20,4 +20,7 @@ deploy:
     branch: master
 
 notifications:
-  slack: dev01d:6JsAqiB8miF7jaZO9hkho5YZ
+  slack:
+    on_success: change
+    on_failure: always
+    on_pull_requests: false
