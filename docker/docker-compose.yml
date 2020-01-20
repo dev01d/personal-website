@@ -1,0 +1,25 @@
+version: '3'
+services:
+  caddy-gen:
+    container_name: caddy-gen
+    image: 'dev01d/caddy-gen:latest'
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./caddy/acme:/etc/caddy/acme
+      - ./caddy/ocsp:/etc/caddy/ocsp
+    ports:
+      - '80:80'
+      - '443:443'
+    depends_on:
+      - site
+
+  site:
+    image: dev01d/site:nginx
+    container_name: radarr
+    restart: unless-stopped
+    labels:
+      - 'virtual.host=jasonbehnke.io'
+      - 'virtual.alias=www.jasonbehnke.io'
+      - 'virtual.port=80'
+      - 'virtual.tls-email='

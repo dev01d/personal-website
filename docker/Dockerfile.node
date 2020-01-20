@@ -1,0 +1,19 @@
+####* Build ENV ####
+FROM node:lts-alpine3.11 as build
+LABEL maintainer="Jason Behnke <contact@jasonbehnke.io>"
+WORKDIR /usr/src/app
+COPY ../ .
+RUN yarn && yarn build
+RUN find /usr/src/app
+
+####* Build App ####
+FROM node:lts-alpine3.11 as app
+LABEL maintainer="Jason Behnke <contact@jasonbehnke.io>"
+ENV NODE_ENV=production
+WORKDIR /usr/src/app
+COPY --from=build /usr/src/app/dist ./dist
+COPY --from=build /usr/src/app/server ./server
+RUN find /usr/src/app
+USER node
+EXPOSE 1234
+CMD "node","server/server.js"

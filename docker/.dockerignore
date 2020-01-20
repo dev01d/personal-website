@@ -1,0 +1,7 @@
+.travis.yml
+.dist
+.cache
+.git
+node_modules
+readme.md
+Dockerfile

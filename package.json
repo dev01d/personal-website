@@ -23,7 +23,8 @@
     "test": "jest",
     "dev": "parcel public/index.html",
     "build": "parcel build public/index.html --detailed-report && echo '/*    /index.html   200' > dist/_redirects",
-    "build:dev": "parcel build public/index.html --detailed-report && node server/server.js"
+    "build:dev": "parcel build public/index.html --detailed-report && node server/server.js",
+    "build:docker": "docker build . -t dev01d/site -f docker/Dockerfile"
   },
   "babel": {
     "presets": [
