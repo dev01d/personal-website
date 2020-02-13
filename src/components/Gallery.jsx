@@ -4,7 +4,7 @@ import Carousel, { Modal, ModalGateway } from 'react-images'
 import lightboxImages from './res/lightbox'
 import galleryImages from './res/gallery'
 
-export default function LightboxGallery() {
+export default () => {
   const [currentImage, setCurrentImage] = useState(0)
   const [viewerIsOpen, setViewerIsOpen] = useState(false)
   const openLightbox = useCallback((event, { photo, index }) => {

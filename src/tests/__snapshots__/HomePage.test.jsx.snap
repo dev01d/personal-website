@@ -79,7 +79,7 @@ exports[`should render HomePage correctly 1`] = `
         </g>
       </svg>
     </Logo>
-    <Social>
+    <_default>
       <div
         className="social-icon"
       >
@@ -114,7 +114,7 @@ exports[`should render HomePage correctly 1`] = `
           </li>
         </ul>
       </div>
-    </Social>
+    </_default>
   </div>
 </_default>
 `;
