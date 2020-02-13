@@ -49,7 +49,7 @@ exports[`should render AboutPage correctly 1`] = `
         </Highlight>
       </div>
     </_default>
-    <Social>
+    <_default>
       <div
         className="social-icon"
       >
@@ -84,7 +84,7 @@ exports[`should render AboutPage correctly 1`] = `
           </li>
         </ul>
       </div>
-    </Social>
+    </_default>
   </div>
 </_default>
 `;
