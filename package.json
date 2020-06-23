@@ -10,7 +10,7 @@
   "dependencies": {
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",
-    "react-burger-menu": "^2.6.15",
+    "react-burger-menu": "^2.6.17",
     "react-dom": "^16.13.1",
     "react-ga": "^3.0.0",
     "react-highlight": "^0.12.0",
