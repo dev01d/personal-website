@@ -17,7 +17,7 @@
     "react-images": "1.0.0",
     "react-photo-gallery": "^8.0.0",
     "react-router-dom": "^5.2.0",
-    "rollbar": "^2.19.0"
+    "rollbar": "^2.19.1"
   },
   "scripts": {
     "test": "jest",
