@@ -7,7 +7,7 @@
   "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "build": {
     "env": {
-      "NEXT_PUBLIC_SENTRY_DSN": "@snext_public_sentry_dsn",
+      "NEXT_PUBLIC_SENTRY_DSN": "@next_public_sentry_dsn",
       "GA_CODE": "@ga_code"
     }
   }
