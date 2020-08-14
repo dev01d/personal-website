@@ -4,12 +4,10 @@
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "index.html", "status": 404 }
   ],
-  "builds": [
-    { "src": "package.json", "use": "@now/static-build" }
-  ],
+  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
   "build": {
     "env": {
-      "ROLLBAR_TOKEN": "@rollbar_token",
+      "NEXT_PUBLIC_SENTRY_DSN": "@snext_public_sentry_dsn",
       "GA_CODE": "@ga_code"
     }
   }
