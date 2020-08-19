@@ -17,7 +17,5 @@ if (process.env.NODE_ENV === 'production') {
     dsn: process.env.SENTRY_DSN,
   })
 }
-// Test Sentry error in prod
-Sentry.captureException(new Error('This is my fake error message'))
 
 ReactDOM.render(<AppRouter id="page-wrap" />, document.getElementById('app'))
