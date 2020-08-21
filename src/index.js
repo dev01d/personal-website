@@ -8,11 +8,6 @@ import './styles/App.css'
 import './styles/index.css'
 
 if (process.env.NODE_ENV === 'production') {
-  ReactGA.initialize(process.env.GA_CODE, {
-    gaOptions: {
-      siteSpeedSampleRate: 100,
-    },
-  })
   Sentry.init({
     dsn: process.env.SENTRY_DSN,
   })

@@ -8,15 +8,8 @@ import About from '../views/AboutPage'
 import Gallery from '../views/GalleryPage'
 
 const history = createBrowserHistory()
-history.listen(location => {
-  ReactGA.set({ page: location.pathname })
-  ReactGA.pageview(location.pathname)
-})
 
 export default class AppRouter extends Component {
-  componentDidMount() {
-    ReactGA.pageview(window.location.pathname)
-  }
   render() {
     return (
       <Router history={history}>
