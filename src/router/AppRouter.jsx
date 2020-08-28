@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactGA from 'react-ga'
 import { createBrowserHistory } from 'history'
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import Sidebar from '../components/Sidebar'
