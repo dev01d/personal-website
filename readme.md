@@ -1,5 +1,3 @@
-[![Uptime Robot ratio (7 days)](https://img.shields.io/uptimerobot/ratio/7/m779994490-c9405c7893773347f4c74fda.svg)](https://status.jasonbehnke.io) [![Build](https://img.shields.io/travis/dev01d/personal-website.svg?style=flat)](https://travis-ci.org/dev01d/personal-website)
-
 # per·son·al web·site
 
 ### /ˈpərs(ə)n(ə)l/ /ˈwebsīt/
