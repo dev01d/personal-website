@@ -2,7 +2,6 @@ import React from 'react'
 import Highlight from 'react-highlight'
 import '../../node_modules/highlight.js/styles/monokai-sublime.css'
 
-
 export default () => (
   <div>
     <Highlight className="json">
@@ -21,7 +20,7 @@ export default () => (
     ],
     "Frameworks": [
       "React",
-      "NextJS",
+      "NextJS"
     ],
     "Technology": [
       "Linux",
