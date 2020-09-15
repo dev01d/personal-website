@@ -31,7 +31,7 @@ exports[`should render AboutPage correctly 1`] = `
     ],
     "Frameworks": [
       "React",
-      "NextJS",
+      "NextJS"
     ],
     "Technology": [
       "Linux",
