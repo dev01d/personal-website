@@ -10,7 +10,7 @@
   "dependencies": {
     "@sentry/browser": "^5.26.0",
     "normalize.css": "^8.0.1",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-burger-menu": "^2.8.0",
     "react-dom": "^16.13.1",
     "react-highlight": "^0.12.0",
