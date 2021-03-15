@@ -4,7 +4,7 @@
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "index.html", "status": 404 }
   ],
-  "builds": [{ "src": "package.json", "use": "@now/static-build" }],
+  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
   "build": {
     "env": {
       "SENTRY_DSN": "@sentry_dsn",
