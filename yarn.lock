@@ -7270,10 +7270,10 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-burger-menu@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-3.0.4.tgz#936418aa6d35da52a6a9436ffb2b33432a56ea8e"
-  integrity sha512-6+zufJT7ZFeUGg3apJEzRjirkwH80aLcZSp9OqDwRGwvfM4a18vzmNNT3cr4WDl+CQ5PtR268l743VAb65yCdw==
+react-burger-menu@^3.0.6:
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/react-burger-menu/-/react-burger-menu-3.0.6.tgz#9003cc1d65dc9e70d1460e5d8d8982f6b1a79d1d"
+  integrity sha512-Xikyl8VRkQBOyFVoMKpbScTLG6LlW64rajiquyCGwtpPswrDxaifusKckzTWAOH0At40Boguhj5lXq451NO0LA==
   dependencies:
     browserify-optional "^1.0.0"
     classnames "^2.2.6"
