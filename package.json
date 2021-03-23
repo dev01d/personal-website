@@ -11,7 +11,7 @@
     "@sentry/browser": "^6.2.3",
     "normalize.css": "^8.0.1",
     "react": "^16.14.0",
-    "react-burger-menu": "^3.0.4",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "^16.14.0",
     "react-highlight": "^0.14.0",
     "react-images": "1.0.0",
