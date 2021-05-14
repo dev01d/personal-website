@@ -1,0 +1,16 @@
+{
+  "optimizers": {
+    "*.js": ["@parcel/optimizer-terser"],
+    "*.css": ["@parcel/optimizer-cssnano"],
+    "*.html": ["@parcel/optimizer-htmlnano"],
+    "*.{png,jpg,jpeg,svg,...}": ["@parcel/optimizer-imagemin"]
+  },
+  "extends": "@parcel/config-default",
+  "transformers": {
+    "*.{js,jsx,ts,tsx}": [
+      "@parcel/transformer-babel",
+      "@parcel/transformer-js"
+    ],
+    "*.{jpg,png,svg}": ["@parcel/transformer-raw"]
+  }
+}
