@@ -1,7 +1,10 @@
-.travis.yml
-.dist
-.cache
 .git
+.github
+.parcel-cache
+
+docker/Dockerfile.node
+docker/docker-compose.yml
+
+dist
 node_modules
 readme.md
-Dockerfile
