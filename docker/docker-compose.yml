@@ -15,7 +15,7 @@ services:
       - site
 
   site:
-    image: dev01d/site:nginx
+    image: dev01d/personal-site
     container_name: radarr
     restart: unless-stopped
     labels:
