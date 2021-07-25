@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "build:docker": "docker build . -t dev01d/personal-site -f docker/Dockerfile"
   },
   "dependencies": {
@@ -16,6 +17,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.1.0",
+    "eslint": "^7.31.0",
+    "eslint-config-next": "^11.0.1",
     "postcss": "^8.2.1",
     "react-highlight": "^0.14.0",
     "tailwindcss": "^2.1.1"
