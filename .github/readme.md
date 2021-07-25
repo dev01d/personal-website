@@ -21,8 +21,11 @@ yarn install
 # Spin up Dev server
 yarn dev
 
-# Export static files
-yarn build
+# Spin up server
+yarn start
+
+# Lint code
+yarn lint
 
 # Build docker container
 yarn build:docker
