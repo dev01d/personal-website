@@ -10,7 +10,7 @@ export default function Home() {
       <main>
         <div
           id="page-wrap"
-          className="flex flex-col max-w-lg mx-auto justify-center py-0 mt-10"
+          className="flex flex-col max-w-lg mx-auto justify-center min-h-screen py-0 mt-0"
         >
           <div>
             <Image

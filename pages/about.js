@@ -9,7 +9,7 @@ export default function About() {
       <main>
         <div
           id="page-wrap"
-          className="flex flex-col min-w-xl md:min-w-l max-w-xl mx-auto justify-center py-3"
+          className="flex flex-col min-w-xl md:min-w-l max-w-xl mx-auto justify-center min-h-screen py-0"
         >
           <AboutJson />
           <Social />
