@@ -1,40 +1,19 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import Menu from 'react-burger-menu/lib/menus/slide'
-import '../styles/Sidebar.css'
+import { slide as Menu } from 'react-burger-menu'
+import Link from 'next/link'
 
-export default class Sidebar extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      menuOpen: false
-    }
-  }
-  handleMobileSidebar = () =>
-    window.innerWidth > 745 || window.DocumentTouch ? 250 : '100%'
-  handleStateChange = state => this.setState({ menuOpen: state.isOpen })
-  closeMenu = () => this.setState({ menuOpen: false })
-  toggleMenu = () => this.setState({ menuOpen: !this.state.menuOpen })
-  render() {
-    return (
-      <Menu
-        width={this.handleMobileSidebar()}
-        isOpen={false}
-        pageWrapId={'page-wrap'}
-        outerContainerId={'App'}
-        isOpen={this.state.menuOpen}
-        onStateChange={state => this.handleStateChange(state)}
-      >
-        <Link className="menu-item" to="/">
-          <a onClick={() => this.closeMenu()}>Home</a>
+export default function Sidebar(props) {
+  return (
+    <Menu>
+      <li>
+        <Link href="/">
+          <a className="menu-item">Home</a>
         </Link>
-        <Link className="menu-item" to="/about">
-          <a onClick={() => this.closeMenu()}>About</a>
+      </li>
+      <li>
+        <Link href="/about">
+          <a className="menu-item">About</a>
         </Link>
-        <Link className="menu-item" to="/gallery">
-          <a onClick={() => this.closeMenu()}>Gallery</a>
-        </Link>
-      </Menu>
-    )
-  }
+      </li>
+    </Menu>
+  )
 }

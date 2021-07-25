@@ -1,7 +1,8 @@
-/* #page-wrap {
+#page-wrap {
   text-align: center;
+  /* Prevent sidebar from showing a scrollbar on page */
   overflow: auto;
-} */
+}
 
 /* Individual item */
 .bm-item {
@@ -71,10 +72,6 @@
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
-}
-
-:focus {
-  outline: none !important;
 }
 
 @media screen and (min-width: 45.5rem) {

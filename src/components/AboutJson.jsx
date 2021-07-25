@@ -1,38 +1,37 @@
-import React from 'react'
 import Highlight from 'react-highlight'
-import '../../node_modules/highlight.js/styles/monokai-sublime.css'
+import styles from '../styles/modules/About.module.css'
 
-export default () => (
+const About = () => (
   <div>
-    <Highlight className="json">
+    <Highlight className={styles.json}>
       {`
-  {
-    "Name": "Jason Behnke",
-    "Priorities": [
-      "Code",
-      "Photography",
-      "Climbing"
-    ],
-    "Languages": [
-      "JavaScript",
-      "Swift",
-      "Python"
-    ],
-    "Frameworks": [
-      "React",
-      "NextJS"
-    ],
-    "Technology": [
-      "Linux",
-      "Ansible",
-      "Docker"
-    ],
-    "Titles": [
-      "Full Stack Developer",
-      "SysAdmin"
-    ]
-  }
-    `}
+    {
+      "Name": "Jason Behnke",
+      "Hobbies": [
+        "Bouldering",
+        "Photography"
+      ],
+      "Titles": [
+        "SRE",
+        "SysAdmin",
+        "Full Stack Developer"
+      ],
+      "Technology": [
+        "Docker",
+        "Ansible",
+        "Terraform",
+        "Kubernetes"
+      ],
+      "Languages": [
+        "Go",
+        "Swift",
+        "Python",
+        "JavaScript"
+      ]
+    }
+  `}
     </Highlight>
   </div>
 )
+
+export default About

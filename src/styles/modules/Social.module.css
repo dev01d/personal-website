@@ -1,0 +1,39 @@
+.socialIcon ul {
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+.socialIcon li {
+  list-style: none;
+  display: inline-block;
+}
+.socialIcon li a {
+  background: #000;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 36px;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  margin-top: 12px;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+  overflow: visible;
+}
+.socialIcon li a:hover {
+  transform: scale(1.02);
+  color: #8b3bc0;
+  -webkit-appearance: none;
+  -webkit-box-shadow: 0 5px 5px #56098a5b;
+  -moz-box-shadow: 0 5px 5px #56098a5b;
+  box-shadow: 0 5px 5px #56098a5b;
+  overflow: visible;
+}

@@ -1,10 +1,9 @@
 .git
 .github
-.parcel-cache
+.gitignore
 
-docker/Dockerfile.node
-docker/docker-compose.yml
+docker
 
-dist
 node_modules
-readme.md
+
+vercel.json

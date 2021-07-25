@@ -1,65 +1,31 @@
 {
-  "name": "jasonbehnke.io",
-  "version": "2.0.0",
+  "name": "personal-site",
+  "version": "2.1.0",
   "description": "Personal Website",
-  "main": "dist/index.html",
   "repository": "https://github.com/dev01d/personal-website.git",
   "author": "Jason Behnke <contact@jasonbehnke.io>",
   "homepage": "https://jasonbehnke.io",
-  "license": "MIT",
-  "dependencies": {
-    "@sentry/browser": "^6.10.0",
-    "normalize.css": "^8.0.1",
-    "react": "^16.14.0",
-    "react-burger-menu": "^3.0.6",
-    "react-dom": "^16.14.0",
-    "react-highlight": "^0.14.0",
-    "react-images": "1.0.0",
-    "react-photo-gallery": "^8.0.0",
-    "react-router-dom": "^5.2.0"
-  },
+  "private": true,
   "scripts": {
-    "test": "jest",
-    "dev": "parcel public/index.html",
-    "build": "yarn test && parcel build public/index.html --detailed-report",
-    "build:dev": "parcel build public/index.html --detailed-report && node server/server.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "build:docker": "docker build . -t dev01d/personal-site -f docker/Dockerfile"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ],
-    "plugins": [
-      "transform-class-properties"
-    ]
-  },
-  "jest": {
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ],
-    "setupFiles": [
-      "raf/polyfill",
-      "<rootDir>/src/tests/setupTests.js"
-    ],
-    "moduleNameMapper": {
-      ".+\\.(css|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
-    },
-    "testEnvironment": "jsdom"
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.14.8",
-    "@babel/preset-env": "^7.14.8",
-    "@babel/preset-react": "^7.14.5",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-jest": "^27.0.6",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
-    "enzyme-to-json": "3.6.2",
-    "express": "^4.17.1",
-    "jest": "^27.0.6",
-    "jest-transform-stub": "^2.0.0",
-    "parcel": "^2.0.0-beta.2"
+    "autoprefixer": "^10.1.0",
+    "eslint": "^7.31.0",
+    "eslint-config-next": "^11.0.1",
+    "postcss": "^8.2.1",
+    "react-highlight": "^0.14.0",
+    "tailwindcss": "^2.1.1"
+
   }
 }

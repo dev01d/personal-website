@@ -1,0 +1,16 @@
+/* @import 'normalize.css'; */
+
+body {
+  font-family: -apple-system, Helvetica, 'Helvetica Neue', BlinkMacSystemFont,
+    'Ubuntu', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+}
+
+/** Dark mode */
+@media (prefers-color-scheme: dark) {
+  html {
+    background: rgb(53, 53, 53);
+  }
+}

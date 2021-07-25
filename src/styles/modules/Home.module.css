@@ -1,0 +1,15 @@
+.home {
+  /** Size of SVG */
+  max-width: 30rem;
+  padding: 4rem 1rem;
+  margin: auto;
+  /** Centered X&&Y*/
+  position: relative;
+  top: 50%;
+  /* transform: perspective(1px) translateY(-10%); */
+  /** Drop shadow for SVG */
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.6));
+}
+.home #svg:hover {
+  filter: drop-shadow(0 10px 10px #56098a5b);
+}
