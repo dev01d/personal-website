@@ -1,6 +1,10 @@
 {
   "name": "personal-site",
   "version": "2.1.0",
+  "description": "Personal Website",
+  "repository": "https://github.com/dev01d/personal-website.git",
+  "author": "Jason Behnke <contact@jasonbehnke.io>",
+  "homepage": "https://jasonbehnke.io",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -22,5 +26,6 @@
     "postcss": "^8.2.1",
     "react-highlight": "^0.14.0",
     "tailwindcss": "^2.1.1"
+
   }
 }
