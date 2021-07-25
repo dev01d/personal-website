@@ -1,8 +1,8 @@
-import React from 'react'
+import styles from '../styles/modules/Social.module.css'
 
-export default () => {
+const Social = () => {
   return (
-    <div className="social-icon">
+    <div className={styles.socialIcon}>
       <ul>
         <li>
           <a
@@ -36,3 +36,5 @@ export default () => {
     </div>
   )
 }
+
+export default Social

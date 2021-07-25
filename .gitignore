@@ -1,5 +1,4 @@
-dist
-node_modules
-.cache
 .DS_Store
-.parcel-cache
+.next
+.out
+node_modules
