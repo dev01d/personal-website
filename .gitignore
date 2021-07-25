@@ -1,4 +1,4 @@
 .DS_Store
 .next
-.out
+out
 node_modules
