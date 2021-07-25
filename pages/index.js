@@ -15,7 +15,6 @@ export default function Home() {
           <div>
             <Image
               src={logo}
-              // src="/assets/logo.svg"
               alt="logo depicting the letters j and b"
               width={600}
               height={600}
