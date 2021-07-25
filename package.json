@@ -9,7 +9,7 @@
     "build:docker": "docker build . -t dev01d/personal-site -f docker/Dockerfile"
   },
   "dependencies": {
-    "next": "^10.2.0",
+    "next": "^11.0.1",
     "next-images": "^1.8.1",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
