@@ -6,10 +6,11 @@ COPY public public
 COPY pages pages
 COPY src src
 COPY yarn.lock yarn.lock
-RUN yarn install && yarn build
+RUN yarn install
+RUN yarn build && yarn export
 
 ####* Build App ####
 FROM nginx:alpine as app
 LABEL maintainer="Jason Behnke <contact@jasonbehnke.io>"
 COPY ./docker/default.conf /etc/nginx/conf.d/
-COPY --from=build /app/dist /usr/share/nginx/html/
+COPY --from=build /app/out /usr/share/nginx/html/
