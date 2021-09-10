@@ -46,6 +46,12 @@ export default function Header() {
         />
 
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          defer
+          data-domain="jasonbehnke.io"
+          src="https://analytics.jasonbehnke.io/js/plausible.js"
+        ></script>
       </Head>
       <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
     </div>
