@@ -3,7 +3,7 @@ import Menu from './Sidebar'
 
 export default function Header() {
   return (
-    <div id="outer-container">
+    <div>
       <Head>
         <meta charSet="utf-8" />
         <title>Jason Behnke</title>
@@ -53,7 +53,7 @@ export default function Header() {
           src="https://analytics.jasonbehnke.io/js/plausible.js"
         ></script>
       </Head>
-      <Menu pageWrapId={'page-wrap'} outerContainerId={'outer-container'} />
+      <Menu />
     </div>
   )
 }

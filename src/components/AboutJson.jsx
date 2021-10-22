@@ -2,7 +2,7 @@ import Highlight from 'react-highlight'
 import styles from '../styles/modules/About.module.css'
 
 const About = () => (
-  <div>
+  <div className="mt-11">
     <Highlight className={styles.json}>
       {`
     {

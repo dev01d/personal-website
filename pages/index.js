@@ -8,10 +8,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <div
-          id="page-wrap"
-          className="flex flex-col max-w-lg mx-auto justify-center min-h-screen py-0 mt-0"
-        >
+        <div className="flex flex-col max-w-lg mx-auto justify-center min-h-screen py-0 mt-0">
           <div>
             <Image
               src={logo}
