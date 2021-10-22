@@ -1,6 +1,5 @@
 import 'tailwindcss/tailwind.css'
 import 'highlight.js/styles/monokai-sublime.css'
-import '../src/styles/Sidebar.css'
 import '../src/styles/main.css'
 
 function MyApp({ Component, pageProps }) {
