@@ -8,7 +8,7 @@ export default function Home() {
   if (BUILD_ENV == 'static') {
     var logoID = `c_scale,w_600/logo.svg`
   } else {
-    var logoID = '../src/images/logo.svg'
+    var logoID = '/assets/logo.svg'
   }
   console.log(BUILD_ENV)
   console.log(logoID)
