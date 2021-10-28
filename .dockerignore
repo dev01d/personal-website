@@ -2,8 +2,6 @@
 .github
 .gitignore
 
-docker
-
 node_modules
-
+.next
 vercel.json
