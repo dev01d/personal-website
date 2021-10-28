@@ -1,9 +1,16 @@
 import 'tailwindcss/tailwind.css'
 import 'highlight.js/styles/monokai-sublime.css'
 import '../src/styles/main.css'
+import PlausibleProvider from 'next-plausible'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <PlausibleProvider
+      domain="jasonbehnke.io"
+      selfHosted={true}
+      customDomain="analytics.jasonbehnke.io"
+    >
+      <Component {...pageProps} />
+    </PlausibleProvider>
+  )
 }
-
-export default MyApp

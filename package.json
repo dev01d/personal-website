@@ -12,10 +12,12 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "build:docker": "docker build . -t dev01d/personal-site -f docker/Dockerfile-nginx"
+    "docker:export": "next build && next export",
+    "docker:build": "docker build . -t dev01d/personal-site -f docker/Dockerfile"
   },
   "dependencies": {
     "next": "^11.1.2",
+    "next-plausible": "^3.0.1",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.2"
