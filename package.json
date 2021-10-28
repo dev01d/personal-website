@@ -16,7 +16,7 @@
     "docker:build": "docker build . -t dev01d/personal-site -f docker/Dockerfile"
   },
   "dependencies": {
-    "next": "^11.1.2",
+    "next": "^12.0.1",
     "next-plausible": "^3.0.1",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.6",
