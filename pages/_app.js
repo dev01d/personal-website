@@ -8,7 +8,7 @@ export default function MyApp({ Component, pageProps }) {
     <PlausibleProvider
       domain="jasonbehnke.io"
       selfHosted={true}
-      customDomain="analytics.jasonbehnke.io"
+      customDomain="https://analytics.jasonbehnke.io"
     >
       <Component {...pageProps} />
     </PlausibleProvider>
