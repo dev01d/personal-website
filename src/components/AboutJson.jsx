@@ -2,9 +2,8 @@ import Highlight from 'react-highlight'
 import styles from '../styles/modules/About.module.css'
 
 const About = () => (
-  <div className="mt-11">
-    <Highlight className={styles.json}>
-      {`
+  <Highlight className={styles.json}>
+    {`
     {
       "Name": "Jason Behnke",
       "Hobbies": [
@@ -30,8 +29,7 @@ const About = () => (
       ]
     }
   `}
-    </Highlight>
-  </div>
+  </Highlight>
 )
 
 export default About

@@ -8,7 +8,9 @@ export default function About() {
       <Header />
       <main>
         <div className="flex flex-col min-w-xl md:min-w-l max-w-xl mx-auto justify-center min-h-screen py-0">
-          <AboutJson />
+          <div className="mt-14">
+            <AboutJson />
+          </div>
           <Social />
         </div>
       </main>
