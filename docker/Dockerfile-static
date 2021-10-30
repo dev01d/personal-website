@@ -1,11 +1,18 @@
+####* Deps ENV ####
+FROM node:lts-alpine3.11 AS deps
+WORKDIR /app
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile
+
 ####* Build ENV ####
 FROM node:lts-alpine3.11 as build
 WORKDIR /app
 COPY . .
 COPY ./docker/next.config.js .
+COPY --from=deps /app/node_modules ./node_modules
 ARG NEXT_PUBLIC_BUILD_ENV=static
-RUN yarn install
-RUN yarn docker:export
+RUN yarn build
+RUN yarn export
 
 ####* Build App ####
 FROM nginx:alpine as app
