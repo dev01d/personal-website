@@ -13,7 +13,7 @@ services:
       - site
 
   site:
-    image: dev01d/personal-site
+    image: dev01d/personal-site:static
     restart: unless-stopped
     labels:
       - "virtual.host=jasonbehnke.io"
