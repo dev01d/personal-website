@@ -10,7 +10,7 @@ updates:
     assignees:
       - dev01d
 
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: "docker"
     directory: "/docker"
     schedule:
       interval: weekly
@@ -26,3 +26,6 @@ updates:
       interval: weekly
       time: "17:30"
       timezone: America/Los_Angeles
+    open-pull-requests-limit: 10
+    assignees:
+      - dev01d
