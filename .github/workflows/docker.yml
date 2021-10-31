@@ -31,9 +31,7 @@ jobs:
           file: ./docker/Dockerfile.static
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-          dev01d/personal-site:static
-          dev01d/personal-site:${{ github.event.release.tag_name }}-static
+          tags: dev01d/personal-site:static,dev01d/personal-site:${{ github.event.release.tag_name }}-static
 
       - name: Build and push node
         uses: docker/build-push-action@v2
@@ -42,6 +40,4 @@ jobs:
           file: ./docker/Dockerfile.node
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: |
-          dev01d/personal-site:node
-          dev01d/personal-site:${{ github.event.release.tag_name }}-node
+          tags: dev01d/personal-site:node,dev01d/personal-site:${{ github.event.release.tag_name }}-node
