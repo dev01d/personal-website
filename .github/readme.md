@@ -26,7 +26,10 @@ yarn start
 
 # Lint code
 yarn lint
-
-# Build docker container
-yarn build:docker
 ```
+
+### Docker
+
+Docker containers are built on tagged releases.
+
+Since there are two methods being built, all [non-versioned tags](https://hub.docker.com/r/dev01d/personal-site/tags) should be considered `:latest` in their respective deployment type - `static` export or `node`.js.
