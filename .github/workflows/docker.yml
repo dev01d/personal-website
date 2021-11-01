@@ -30,6 +30,8 @@ jobs:
         id: meta-static
         uses: docker/metadata-action@v3
         with:
+          flavor: |
+            latest=false
           images: |
             dev01d/personal-site
           tags: |
@@ -50,6 +52,8 @@ jobs:
         id: meta-node
         uses: docker/metadata-action@v3
         with:
+          flavor: |
+            latest=false
           images: |
             dev01d/personal-site
           tags: |
