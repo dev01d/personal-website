@@ -44,7 +44,7 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           labels: ${{ steps.meta-static.outputs.labels }}
-          tags: ${{ steps.meta-static.outputs.tags }}"
+          tags: ${{ steps.meta-static.outputs.tags }}
 
       - name: Docker meta node
         id: meta-node
