@@ -27,7 +27,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Docker meta static
-        id: meta
+        id: meta-static
         uses: docker/metadata-action@v3
         with:
           images: |
@@ -43,11 +43,11 @@ jobs:
           file: ./docker/Dockerfile.static
           platforms: linux/amd64,linux/arm64
           push: true
-          labels: ${{ steps.meta.outputs.labels }}
-          tags: ${{ steps.meta.outputs.tags }}"
+          labels: ${{ steps.meta-static.outputs.labels }}
+          tags: ${{ steps.meta-static.outputs.tags }}"
 
       - name: Docker meta node
-        id: meta
+        id: meta-node
         uses: docker/metadata-action@v3
         with:
           images: |
@@ -63,5 +63,5 @@ jobs:
           file: ./docker/Dockerfile.node
           platforms: linux/amd64,linux/arm64
           push: true
-          labels: ${{ steps.meta.outputs.labels }}
-          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta-node.outputs.labels }}
+          tags: ${{ steps.meta-node.outputs.tags }}
