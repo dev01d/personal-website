@@ -53,7 +53,6 @@ jobs:
           file: ./docker/Dockerfile.static
           platforms: linux/amd64,linux/arm64
           push: true
-          labels: ${{ steps.meta-static.outputs.labels }}
           tags: ${{ steps.meta-static.outputs.tags }}"
 
       - name: Build and push node
@@ -63,5 +62,4 @@ jobs:
           file: ./docker/Dockerfile.node
           platforms: linux/amd64,linux/arm64
           push: true
-          labels: ${{ steps.meta-node.outputs.labels }}
           tags: ${{ steps.meta-node.outputs.tags }}
