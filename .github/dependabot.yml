@@ -10,7 +10,7 @@ updates:
     assignees:
       - dev01d
 
-  - package-ecosystem: "docker"
+  - package-ecosystem: docker
     directory: "/docker"
     schedule:
       interval: weekly
@@ -20,7 +20,7 @@ updates:
     assignees:
       - dev01d
 
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: github-actions
     directory: "/"
     schedule:
       interval: weekly
