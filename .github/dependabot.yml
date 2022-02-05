@@ -11,7 +11,7 @@ updates:
       - dev01d
 
   - package-ecosystem: docker
-    directory: "/docker"
+    directory: "docker"
     schedule:
       interval: weekly
       time: "17:30"
