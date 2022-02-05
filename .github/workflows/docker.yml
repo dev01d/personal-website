@@ -42,7 +42,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./docker/Dockerfile.static
+          file: ./docker/Dockerfile-static
           platforms: linux/amd64,linux/arm64
           push: true
           labels: ${{ steps.meta-static.outputs.labels }}
@@ -64,7 +64,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
-          file: ./docker/Dockerfile.node
+          file: ./docker/Dockerfile-node
           platforms: linux/amd64,linux/arm64
           push: true
           labels: ${{ steps.meta-node.outputs.labels }}
