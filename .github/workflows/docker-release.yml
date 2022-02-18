@@ -51,7 +51,7 @@ jobs:
         uses: docker/metadata-action@v3
         with:
           flavor: |
-            latest=flase
+            latest=false
           images: |
             dev01d/personal-site
           tags: |
