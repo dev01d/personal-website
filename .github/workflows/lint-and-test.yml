@@ -24,6 +24,6 @@ jobs:
       - name: Test
         run: yarn test:ci
 
-  call-docker-latest:
-    if: github.event_name != 'pull_request'
-    uses: ./.github/workflows/docker-latest.yml
+      - name: call docker latest
+        if: github.event_name != 'pull_request'
+        uses: ./.github/workflows/docker-latest.yml
