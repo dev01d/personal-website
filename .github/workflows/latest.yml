@@ -1,9 +1,36 @@
-name: Docker :latest
+name: Lint and test
 
-on: workflow_call
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "17"
+          cache: "yarn"
+
+      - name: Install deps
+        run: yarn --no-progress --non-interactive --no-lockfile
+
+      - name: Lint code
+        run: yarn lint
+
+      - name: Test
+        run: yarn test:ci
+
   docker-build:
+    needs: lint-and-test
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
