@@ -28,6 +28,3 @@ jobs:
     needs: lint-and-test
     if: github.event_name != 'pull_request'
     uses: ./.github/workflows/docker-latest.yml
-    with:
-      username: ${{ secrets.DOCKERHUB_USERNAME }}
-      password: ${{ secrets.DOCKERHUB_TOKEN }}
