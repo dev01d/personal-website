@@ -26,4 +26,4 @@ jobs:
 
   call-docker-latest:
     if: github.event_name != 'pull_request'
-    uses: ./.github/workflows/docker-latest.yml@main
+    uses: ./.github/workflows/docker-latest.yml
