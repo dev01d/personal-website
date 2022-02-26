@@ -1,9 +1,7 @@
 name: Docker :latest
 
 on:
-  push:
-    branches:
-      - main
+  workflow_call:
 
 jobs:
   docker-build:
