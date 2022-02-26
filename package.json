@@ -15,6 +15,15 @@
     "test": "jest --watch",
     "test:ci": "jest --ci"
   },
+  "eslintConfig": {
+    "extends": "next"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
   "dependencies": {
     "next": "^12.1.0",
     "next-plausible": "^3.1.5",
