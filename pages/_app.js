@@ -1,6 +1,6 @@
 import 'tailwindcss/tailwind.css'
-import 'highlight.js/styles/monokai-sublime.css'
 import '../src/styles/main.css'
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import PlausibleProvider from 'next-plausible'
 
 export default function MyApp({ Component, pageProps }) {
