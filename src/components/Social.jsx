@@ -3,13 +3,13 @@ import styles from '../styles/modules/Social.module.css'
 const Social = () => {
   return (
     <div className={styles.socialIcon}>
+      <base rel="noopener noreferrer" target="_blank" />
       <ul>
         <li>
           <a
             href="https://github.com/dev01d"
             className="fab fa-github"
             alt="link to github.com"
-            target="_blank"
           />
         </li>
         <li>
@@ -24,7 +24,6 @@ const Social = () => {
             href="https://instagram.com/jason.behnke"
             className="fab fa-instagram"
             alt="link to instagram"
-            target="_blank"
           />
         </li>
         <li>
@@ -32,7 +31,6 @@ const Social = () => {
             href="https://dev.to/dev01d"
             className="fab fa-dev"
             alt="link to Dev.to"
-            target="_blank"
           />
         </li>
       </ul>
