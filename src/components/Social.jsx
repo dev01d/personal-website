@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import {
+  faGithub,
+  faInstagram,
+  faDev,
+} from '@fortawesome/free-brands-svg-icons'
+
 import styles from '../styles/modules/Social.module.css'
 
 const Social = () => {
@@ -6,32 +14,27 @@ const Social = () => {
       <base rel="noopener noreferrer" target="_blank" />
       <ul>
         <li>
-          <a
-            href="https://github.com/dev01d"
-            className="fab fa-github"
-            alt="link to github.com"
-          />
+          <a href="https://github.com/dev01d" alt="link to github.com">
+            <FontAwesomeIcon icon={faGithub} inverse fixedWidth />
+          </a>
         </li>
         <li>
           <a
             href="mailt&#111;&#58;&#99;o&#110;tact&#64;jaso&#110;behnk&#101;&#46;io"
-            className="far fa-envelope"
             alt="send me an email"
-          />
+          >
+            <FontAwesomeIcon icon={faEnvelope} inverse fixedWidth />
+          </a>
         </li>
         <li>
-          <a
-            href="https://instagram.com/jason.behnke"
-            className="fab fa-instagram"
-            alt="link to instagram"
-          />
+          <a href="https://instagram.com/jason.behnke" alt="link to instagram">
+            <FontAwesomeIcon icon={faInstagram} inverse fixedWidth />
+          </a>
         </li>
         <li>
-          <a
-            href="https://dev.to/dev01d"
-            className="fab fa-dev"
-            alt="link to Dev.to"
-          />
+          <a href="https://dev.to/dev01d" alt="link to Dev.to">
+            <FontAwesomeIcon icon={faDev} inverse fixedWidth />
+          </a>
         </li>
       </ul>
     </div>
