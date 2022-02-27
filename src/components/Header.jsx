@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Script from 'next/script'
-import Menu from './Sidebar'
+import dynamic from 'next/dynamic'
+const Menu = dynamic(() => import('./Sidebar'))
 
 export default function Header() {
   return (
