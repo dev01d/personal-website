@@ -9,6 +9,7 @@ const Social = () => {
             href="https://github.com/dev01d"
             className="fab fa-github"
             alt="link to github.com"
+            target="_blank"
           />
         </li>
         <li>
@@ -23,13 +24,15 @@ const Social = () => {
             href="https://instagram.com/jason.behnke"
             className="fab fa-instagram"
             alt="link to instagram"
+            target="_blank"
           />
         </li>
         <li>
           <a
-            href="https://500px.com/jasonbehnke"
-            className="fab fa-500px"
-            alt="link to 500px"
+            href="https://dev.to/dev01d"
+            className="fab fa-dev"
+            alt="link to Dev.to"
+            target="_blank"
           />
         </li>
       </ul>

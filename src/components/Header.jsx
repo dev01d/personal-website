@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 import Menu from './Sidebar'
 
 export default function Header() {
@@ -40,9 +41,10 @@ export default function Header() {
 
         <link
           rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
-          integrity="sha384-DmABxgPhJN5jlTwituIyzIUk6oqyzf3+XuP7q3VfcWA2unxgim7OSSZKKf0KSsnh"
-          crossOrigin="anonymous"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
         />
 
         <link rel="icon" href="/favicon.ico" />
