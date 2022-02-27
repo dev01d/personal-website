@@ -1,9 +1,8 @@
-import Highlight from 'react-highlight'
-import styles from '../styles/modules/About.module.css'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { monokaiSublime } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
 
-const About = () => (
-  <Highlight className={styles.json}>
-    {`
+const About = () => {
+  const codeString = `
     {
       "Name": "Jason Behnke",
       "Hobbies": [
@@ -28,8 +27,21 @@ const About = () => (
         "JavaScript"
       ]
     }
-  `}
-  </Highlight>
-)
-
+    `
+  return (
+    <SyntaxHighlighter
+      language="json"
+      style={monokaiSublime}
+      customStyle={{
+        margin: '2rem 1rem',
+        padding: '1rem',
+        fontSize: '16px',
+        borderRadius: '10px',
+        boxShadow: '0 10px 10px rgba(0, 0, 0, 0.4)',
+      }}
+    >
+      {codeString}
+    </SyntaxHighlighter>
+  )
+}
 export default About
