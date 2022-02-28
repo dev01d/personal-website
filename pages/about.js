@@ -1,6 +1,7 @@
 import Header from '../src/components/Header'
+import dynamic from 'next/dynamic'
 import AboutJson from '../src/components/AboutJson'
-import Social from '../src/components/Social'
+const Social = dynamic(() => import('../src/components/Social'))
 
 export default function About() {
   return (

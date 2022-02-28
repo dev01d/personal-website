@@ -23,14 +23,12 @@ var styles = {
     position: 'absolute',
     width: '36px',
     height: '30px',
-    // left: '36px',
     right: '36px',
     top: '36px',
     float: 'right',
   },
   bmBurgerBars: {
     background: '#000',
-    // background: '#bdc3c7',
     borderRadius: '15%',
   },
   bmCrossButton: {

@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Script from 'next/script'
-import Menu from './Sidebar'
+import dynamic from 'next/dynamic'
+const Menu = dynamic(() => import('./Sidebar'))
 
 export default function Header() {
   return (
@@ -26,11 +26,19 @@ export default function Header() {
           sizes="120x120"
           href="./assets/apple-touch-icon.png"
         />
+
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
           href="./assets/favicon-32x32.png"
+        />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./assets/favicon-16x16.png"
         />
 
         <link

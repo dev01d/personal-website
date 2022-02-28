@@ -1,6 +1,7 @@
-import Header from '../src/components/Header'
 import Image from 'next/image'
-import Social from '../src/components/Social'
+import Header from '../src/components/Header'
+import dynamic from 'next/dynamic'
+const Social = dynamic(() => import('../src/components/Social'))
 
 export default function Home() {
   var logoID = '/assets/logo.svg'
