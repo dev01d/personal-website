@@ -1,4 +1,4 @@
-name: Lint and test
+name: Lint and test latest
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
   docker-build:
     needs: lint-and-test
     if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Checkout
         uses: actions/checkout@v3
