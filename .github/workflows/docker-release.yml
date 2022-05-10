@@ -46,7 +46,7 @@ jobs:
 
       - name: Docker meta static
         id: meta-static
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           flavor: |
             latest=false
@@ -68,7 +68,7 @@ jobs:
 
       - name: Docker meta node
         id: meta-node
-        uses: docker/metadata-action@v3
+        uses: docker/metadata-action@v4
         with:
           flavor: |
             latest=false
