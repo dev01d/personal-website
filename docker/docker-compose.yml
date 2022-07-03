@@ -18,5 +18,5 @@ services:
     labels:
       - "virtual.host=jasonbehnke.io"
       - "virtual.alias=www.jasonbehnke.io"
-      - "virtual.port=80"
+      - "virtual.port=3000"
       - "virtual.tls-email="
