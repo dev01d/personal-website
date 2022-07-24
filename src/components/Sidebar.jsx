@@ -1,4 +1,4 @@
-import { slide as Menu } from 'react-burger-menu'
+import Menu from 'react-burger-menu/lib/menus/slide'
 import Link from 'next/link'
 
 export default function Sidebar(props) {
