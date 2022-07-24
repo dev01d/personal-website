@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Header from '../src/components/Header'
 import dynamic from 'next/dynamic'
 const Social = dynamic(() => import('../src/components/Social'))
 
@@ -10,7 +9,6 @@ export default function Home() {
   }
   return (
     <>
-      <Header />
       <main>
         <div className="flex flex-col max-w-lg mx-auto justify-center min-h-screen py-0 mt-0">
           <div>
