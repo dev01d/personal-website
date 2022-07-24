@@ -1,17 +1,35 @@
-import { slide as Menu } from 'react-burger-menu'
+import React, { useState } from 'react'
+import Menu from 'react-burger-menu/lib/menus/slide'
 import Link from 'next/link'
 
 export default function Sidebar(props) {
+  const [isOpen, setOpen] = useState(false)
+  const handleIsOpen = () => {
+    setOpen(!isOpen)
+  }
+  const closeSideBar = () => {
+    setOpen(false)
+  }
   return (
-    <Menu styles={styles} right>
+    <Menu
+      styles={styles}
+      isOpen={isOpen}
+      onOpen={handleIsOpen}
+      onClose={handleIsOpen}
+      right
+    >
       <li id="page-wrap">
         <Link href="/">
-          <a className="menu-item">Home</a>
+          <a className="menu-item" onClick={closeSideBar}>
+            Home
+          </a>
         </Link>
       </li>
       <li>
         <Link href="/about">
-          <a className="menu-item">About</a>
+          <a className="menu-item" onClick={closeSideBar}>
+            About
+          </a>
         </Link>
       </li>
     </Menu>
