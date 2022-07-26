@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Menu from 'react-burger-menu/lib/menus/slide'
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
 export default function Sidebar(props) {
   const [isOpen, setOpen] = useState(false)
@@ -17,6 +19,9 @@ export default function Sidebar(props) {
       onOpen={handleIsOpen}
       onClose={handleIsOpen}
       right
+      customCrossIcon={
+        <FontAwesomeIcon icon={faXmark} color={'#b8b7ad'} fixedWidth />
+      }
     >
       <li id="page-wrap">
         <Link href="/">
@@ -47,14 +52,15 @@ var styles = {
   },
   bmBurgerBars: {
     background: '#000',
-    borderRadius: '15%',
+    borderRadius: '20%',
   },
   bmCrossButton: {
-    height: '36px',
-    width: '36px',
+    height: '56px',
+    width: '285px',
   },
   bmCross: {
-    background: '#bdc3c7',
+    height: '48px',
+    width: '48px',
   },
   bmMenuWrap: {
     position: 'fixed',
