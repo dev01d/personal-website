@@ -1,5 +1,8 @@
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import { monokaiSublime } from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
+import monokaiSublime from 'react-syntax-highlighter/dist/cjs/styles/hljs/monokai-sublime'
+import json from 'react-syntax-highlighter/dist/cjs/languages/hljs/json'
+
+SyntaxHighlighter.registerLanguage('json', json)
 
 const About = () => {
   const codeString = `
@@ -30,7 +33,7 @@ const About = () => {
     `
   return (
     <SyntaxHighlighter
-      language="json"
+      language={json}
       style={monokaiSublime}
       customStyle={{
         margin: '2rem 1rem',
