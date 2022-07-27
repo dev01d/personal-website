@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'
 import Layout from '../src/components/Layout'
 import PlausibleProvider from 'next-plausible'
 
-export default function MyApp({ Component, pageProps }) {
+export default function Root({ Component, pageProps }) {
   return (
     <PlausibleProvider
       domain="jasonbehnke.io"

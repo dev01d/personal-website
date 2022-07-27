@@ -3,11 +3,15 @@ import Footer from './Footer'
 
 function Layout({ children }) {
   return (
-    <div className="container mx-auto max-w-5xl flex flex-col min-h-screen px-4">
+    <>
       <Header />
-      <main className="flex-1">{children}</main>
-      <Footer />
-    </div>
+      <div className="container flex mx-auto max-w-5xl items-center justify-center min-h-screen px-4">
+        <main className="flex-1">
+          {children}
+          <Footer />
+        </main>
+      </div>
+    </>
   )
 }
 

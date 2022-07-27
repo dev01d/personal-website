@@ -7,7 +7,7 @@ export default function Home() {
   }
   return (
     <main>
-      <div className="max-w-lg mx-auto justify-center pt-28 mt-0">
+      <div className="max-w-lg mx-auto mt-0">
         <Image
           src={logoID}
           alt="logo depicting the letters j and b"
