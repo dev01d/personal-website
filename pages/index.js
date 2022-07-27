@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import dynamic from 'next/dynamic'
-const Social = dynamic(() => import('../src/components/Social'))
 
 export default function Home() {
   var logoID = '/assets/logo.svg'
@@ -8,20 +6,15 @@ export default function Home() {
     var logoID = `c_scale,w_600/logo.svg`
   }
   return (
-    <>
-      <main>
-        <div className="flex flex-col max-w-lg mx-auto justify-center min-h-screen py-0 mt-0">
-          <div>
-            <Image
-              src={logoID}
-              alt="logo depicting the letters j and b"
-              width={600}
-              height={600}
-            />
-          </div>
-          <Social />
-        </div>
-      </main>
-    </>
+    <main>
+      <div className="max-w-lg mx-auto justify-center pt-28 mt-0">
+        <Image
+          src={logoID}
+          alt="logo depicting the letters j and b"
+          width={600}
+          height={600}
+        />
+      </div>
+    </main>
   )
 }
