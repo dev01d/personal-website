@@ -37,6 +37,13 @@ export default function Sidebar(props) {
           </a>
         </Link>
       </li>
+      <li>
+        <Link href="/blog">
+          <a className="menu-item hover:underline" onClick={closeSideBar}>
+            Blog
+          </a>
+        </Link>
+      </li>
     </Menu>
   )
 }
