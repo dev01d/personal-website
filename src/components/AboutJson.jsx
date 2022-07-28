@@ -1,7 +1,6 @@
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter'
-import monokaiSublime from 'react-syntax-highlighter/dist/cjs/styles/hljs/monokai-sublime'
-import json from 'react-syntax-highlighter/dist/cjs/languages/hljs/json'
-
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json'
+import theme from 'react-syntax-highlighter/dist/cjs/styles/prism/atom-dark'
 SyntaxHighlighter.registerLanguage('json', json)
 
 const About = () => {
@@ -33,8 +32,8 @@ const About = () => {
     `
   return (
     <SyntaxHighlighter
-      language={json}
-      style={monokaiSublime}
+      language="json"
+      style={theme}
       customStyle={{
         margin: '2rem 1rem',
         padding: '1rem',
