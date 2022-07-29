@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function PostCard({ title, date, description, slug, image }) {
   return (
-    <div className="my-4 py-4 pl-4 border dark:border-none shadow-2xl shadow-shadow-gray-800 dark:shadow-zinc-900 rounded-xl">
+    <div className="my-4 py-4 pl-4 border-0 border-t border-t-zinc-200 shadow-purple-500 dark:shadow-zinc-500 dark:border-t-zinc-600 shadow-2xl rounded-xl">
       <h2 className="font-bold text-2xl my-4 dark:text-white underline">
         {title}
       </h2>
