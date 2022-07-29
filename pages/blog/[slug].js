@@ -10,8 +10,8 @@ import { serialize } from 'next-mdx-remote/serialize'
 function Post({ data, content }) {
   return (
     <div>
-      <div className="items-center justify-center m:ml-16 l:ml-16 xl:ml-16 ">
-        <h1 className="font-bold text-7xl mb-12 mt-24 dark:text-white">
+      <div className="justify-center mx-auto max-w-xs sm:max-w-lg lg:max-w-2xl">
+        <h1 className="font-bold text-4xl md:text-5xl mb-12 mt-24 dark:text-white">
           {data.title}
         </h1>
         <div className="mb-5">
@@ -20,18 +20,18 @@ function Post({ data, content }) {
             layout="responsive"
             height={637}
             width={1280}
-            alt=""
+            alt="cover photo"
             className="rounded-xl"
           />
         </div>
         <time className="pt-5 text-gray-500 italic dark:text-white">
           {data.date}
         </time>
-        <p className="prose max-w-none prose-code:before:content-none prose-code:after:content-none dark:prose-invert prose-headings:underline prose-a:text-blue-600 prose-img:rounded-xl mt-12 mb-12">
+        <div className="prose prose-code:before:content-none prose-code:after:content-none prose-code:rounded-xl dark:prose-invert prose-headings:underline prose-a:text-blue-600 prose-img:rounded-xl mt-12 mb-12 sm:prose-sm md:prose-m lg:prose-lg xl:prose-x">
           <MDXRemote {...content} />
-        </p>
+        </div>
       </div>
-      <div className="flex flex-col items-center justify-center mb-16">
+      <div className="flex flex-col items-center justify-center mb-10">
         <button className="items-center px-4 py-2 border border-transparent rounded-lg shadow-sm text-m font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 mt-4">
           <Link href={'/blog'}> Go Back </Link>
         </button>
