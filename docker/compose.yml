@@ -1,0 +1,7 @@
+---
+services:
+  site:
+    image: dev01d/personal-site:test
+    restart: unless-stopped
+    ports:
+      - 3000:3000
