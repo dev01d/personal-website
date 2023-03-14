@@ -42,7 +42,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@types/testing-library__jest-dom": "^5.14.5",
-    "autoprefixer": "^10.4.13",
+    "autoprefixer": "^10.4.14",
     "eslint": "^8.36.0",
     "eslint-config-next": "^13.2.3",
     "gray-matter": "^4.0.3",
