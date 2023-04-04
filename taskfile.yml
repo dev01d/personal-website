@@ -1,0 +1,30 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: dependencies
+
+  dependencies:
+    cmds:
+      - yarn install
+
+  dev:
+    cmds:
+      - yarn dev
+
+  build:
+    cmds:
+      - yarn build
+
+  test:
+    cmds:
+      - yarn test
+
+  static:
+    cmds:
+      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.static -t dev01d/personal-site:static --push
+
+  node:
+    cmds:
+      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.node -t dev01d/personal-site:node --push
