@@ -33,11 +33,9 @@ RUN adduser --system --uid 1001 nextjs
 COPY --chown=nextjs:nodejs --from=builder /app/public ./public
 COPY --chown=nextjs:nodejs --from=builder /app/.next/standalone ./
 COPY --chown=nextjs:nodejs --from=builder /app/.next/static ./.next/static
-# COPY --chown=nextjs:nodejs --from=builder /app/node_modules ./node_modules
 USER nextjs
 EXPOSE 3000
 ENTRYPOINT ["/sbin/tini", "--"]
 HEALTHCHECK --interval=12s --timeout=12s --start-period=30s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost/api/status || exit 1
-# CMD ["pnpm", "start"]
 CMD ["node", "server.js"]
