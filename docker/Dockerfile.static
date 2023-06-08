@@ -1,18 +1,23 @@
+####* Base img ####
+FROM node:current-alpine3.18 AS base
+RUN npm i -g pnpm
+
 ####* Deps ENV ####
-FROM node:lts-alpine AS deps
+FROM base AS deps
 WORKDIR /app
-COPY package.json yarn.lock ./
-RUN yarn install --frozen-lockfile
+COPY package.json pnpm-lock.yaml ./
+RUN pnpm install
 
 ####* Build ENV ####
-FROM node:lts-alpine as build
+FROM base as build
 WORKDIR /app
 COPY . .
 COPY ./docker/next.config.js .
 COPY --from=deps /app/node_modules ./node_modules
 ARG NEXT_PUBLIC_BUILD_ENV=static
-RUN yarn build
-RUN yarn export
+RUN pnpm run build
+RUN pnpm prune --prod
+RUN pnpm export
 
 ####* Build App ####
 FROM nginx:alpine as app
