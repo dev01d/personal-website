@@ -5,6 +5,7 @@
   "repository": "https://github.com/dev01d/personal-website.git",
   "author": "Jason Behnke <contact@jasonbehnke.io>",
   "homepage": "https://jasonbehnke.io",
+  "packageManager": "pnpm@8.6.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
