@@ -6,7 +6,7 @@ RUN npm i -g pnpm
 FROM base AS deps
 WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm install
+RUN pnpm i -s --frozen-lockfile
 
 ####* Build ENV ####
 FROM base as build
