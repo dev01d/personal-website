@@ -14,16 +14,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: "yarn"
+          cache: "pnpm"
 
       - name: Install deps
-        run: yarn --no-progress --non-interactive --no-lockfile
+        run: pnpm install -s --frozen-lockfile
 
       - name: Lint code
-        run: yarn lint
+        run: pnpm lint
 
       - name: Test
-        run: yarn test:ci
+        run: pnpm test:ci
 
   docker-release-semver:
     needs: lint-and-test-semver
