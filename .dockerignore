@@ -4,5 +4,8 @@
 
 node_modules
 .next
+.swc
+.dockerignore
+taskfile.yml
 vercel.json
 /__tests__

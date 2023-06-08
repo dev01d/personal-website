@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   default:
@@ -7,19 +7,23 @@ tasks:
 
   dependencies:
     cmds:
-      - yarn install
+      - pnpm install
 
   dev:
     cmds:
-      - yarn dev
+      - pnpm dev
 
   build:
     cmds:
-      - yarn build
+      - pnpm run build
 
   test:
     cmds:
-      - yarn test
+      - pnpm test
+
+  test-ci:
+    cmds:
+      - pnpm test:ci
 
   static:
     cmds:
