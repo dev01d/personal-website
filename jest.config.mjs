@@ -4,7 +4,7 @@ const createJestConfig = nextJest({
   dir: './',
 })
 
-// /** @type {import('jest').Config} */
+/** @type {import('jest').Config} */
 const config = {
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
   moduleDirectories: ['node_modules', '<rootDir>/'],
