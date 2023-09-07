@@ -1,14 +1,4 @@
 {
   "version": 2,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "index.html", "status": 404 }
-  ],
-  "build": {
-    "env": {
-      "SENTRY_ORG": "@sentry_org",
-      "SENTRY_PROJECT": "@sentry_project",
-      "NEXT_PUBLIC_SENTRY_DSN": "@sentry_dsn"
-    }
-  }
+  "redirects": [{ "source": "/.*", "destination": "/" }]
 }
