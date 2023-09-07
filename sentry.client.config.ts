@@ -5,6 +5,8 @@ Sentry.init({
   integrations: [
     new Sentry.Replay({
       // Additional Replay configuration goes in here, for example:
+      sessionSampleRate: 1.0,
+      errorSampleRate: 1.0,
       maskAllText: true,
       blockAllMedia: true,
     }),
