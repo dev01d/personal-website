@@ -8,8 +8,8 @@ module.exports = withSentryConfig(
   {
     silent: true,
 
-    org: '@sentry_org',
-    project: '@sentry_project',
+    org: process.env.SENTRY_ORG,
+    project: process.env.SENTRY_PROJECT,
   },
   {
     widenClientFileUpload: true,

@@ -1,5 +1,5 @@
 import * as Sentry from '@sentry/nextjs'
 
 Sentry.init({
-  dsn: '@sentry_dsn',
+  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
 })
