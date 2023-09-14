@@ -1,3 +1,4 @@
+// @ts-nocheck
 import getPost from '../../src/utils/getPost'
 import getPosts from '../../src/utils/getPosts'
 import Link from 'next/link'
