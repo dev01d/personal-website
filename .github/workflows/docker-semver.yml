@@ -61,7 +61,7 @@ jobs:
             type=semver,event=tag,pattern={{version}},suffix=-static
 
       - name: Build and push static
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./docker/Dockerfile.static
@@ -83,7 +83,7 @@ jobs:
             type=semver,event=tag,pattern={{version}},suffix=-node
 
       - name: Build and push node
-        uses: docker/build-push-action@v4
+        uses: docker/build-push-action@v5
         with:
           context: .
           file: ./docker/Dockerfile.node
