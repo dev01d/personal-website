@@ -1,0 +1,28 @@
+name: Metrics
+on:
+  schedule:
+    - cron: '0 0 * * SUN'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@v3.34
+        with:
+          filename: .github/github-metrics.*
+          token: NOT_NEEDED
+          # Options
+          user: dev01d
+          template: classic
+          base: ''
+          config_octicon: yes
+          config_timezone: America/Los_Angeles
+          plugin_pagespeed: yes
+          plugin_pagespeed_detailed: yes
+          plugin_pagespeed_url: https://jasonbehnke.io
