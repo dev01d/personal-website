@@ -1,9 +1,7 @@
 name: Docker :Latest release
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
   pull_request:
     branches:
       - main
@@ -21,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "pnpm"
+          cache: 'pnpm'
 
       - name: Install deps
         run: pnpm i -s --frozen-lockfile
