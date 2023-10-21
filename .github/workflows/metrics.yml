@@ -15,10 +15,9 @@ jobs:
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
-          filename: .github/github-metrics.*
+          # filename: .github/github-metrics.*
           token: NOT_NEEDED
           # Options
-          user: dev01d
           template: classic
           base: ''
           config_octicon: yes
