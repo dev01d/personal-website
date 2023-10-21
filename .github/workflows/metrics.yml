@@ -15,12 +15,11 @@ jobs:
     steps:
       - uses: lowlighter/metrics@v3.34
         with:
-          # filename: .github/github-metrics.*
+          filename: .github/github-metrics.*
           token: NOT_NEEDED
           # Options
           template: classic
           base: ''
-          config_octicon: yes
           config_timezone: America/Los_Angeles
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes

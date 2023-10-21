@@ -12,24 +12,6 @@
 
    > "This personal website describes his career and gives little information about his personal life"
 
-### Up and running
-
-```bash
-# Install all of the things
-yarn install
-
-# Spin up Dev server
-yarn dev
-
-# Spin up server
-yarn start
-
-# Lint code
-yarn lint
-```
-
-### Docker
-
-Docker containers are built on tagged releases.
-
-Since there are two methods being built, all [non-versioned tags](https://hub.docker.com/r/dev01d/personal-site/tags) should be considered `:latest` in their respective deployment type - `static` export or `node`.js.
+<p align="center">
+    <img src=".github/github-metrics.svg" />
+</p>
