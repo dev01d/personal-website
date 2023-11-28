@@ -26,7 +26,7 @@
     }
   },
   "dependencies": {
-    "@sentry/nextjs": "^7.81.0",
+    "@sentry/nextjs": "^7.82.0",
     "gray-matter": "^4.0.3",
     "next": "^12.3.4",
     "next-mdx-remote": "^4.4.1",
