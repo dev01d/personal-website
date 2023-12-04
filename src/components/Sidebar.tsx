@@ -24,21 +24,21 @@ export default function Sidebar(props) {
       }
     >
       <li id="page-wrap">
-        <Link href="/">
+        <Link legacyBehavior href="/">
           <a className="menu-item hover:underline" onClick={closeSideBar}>
             Home
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/about">
+        <Link legacyBehavior href="/about">
           <a className="menu-item hover:underline" onClick={closeSideBar}>
             About
           </a>
         </Link>
       </li>
       <li>
-        <Link href="/blog">
+        <Link legacyBehavior href="/blog">
           <a className="menu-item hover:underline" onClick={closeSideBar}>
             Blog
           </a>
