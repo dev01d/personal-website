@@ -8,6 +8,29 @@ on:
   workflow_dispatch:
 
 jobs:
+  lint-and-test-latest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm i -s --frozen-lockfile
+
+      - name: Lint code
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test:ci
+
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
