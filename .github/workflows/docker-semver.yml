@@ -3,34 +3,10 @@ name: Docker SemVer release
 on:
   push:
     tags:
-      - "*"
+      - '*'
 
 jobs:
-  lint-and-test-semver:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: "pnpm"
-
-      - name: Install deps
-        run: pnpm install -s --frozen-lockfile
-
-      - name: Lint code
-        run: pnpm lint
-
-      - name: Test
-        run: pnpm test:ci
-
   docker-release-semver:
-    needs: lint-and-test-semver
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

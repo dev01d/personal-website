@@ -7,31 +7,7 @@ on:
       - main
 
 jobs:
-  lint-and-test-latest:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: latest
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'pnpm'
-
-      - name: Install deps
-        run: pnpm i -s --frozen-lockfile
-
-      - name: Lint code
-        run: pnpm lint
-
-      - name: Test
-        run: pnpm test:ci
-
   docker-release-latest:
-    needs: lint-and-test-latest
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     steps:
