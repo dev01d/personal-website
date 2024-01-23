@@ -8,6 +8,14 @@ on:
   workflow_dispatch:
 
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke workflow without inputs
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: lint-and-test
+
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
