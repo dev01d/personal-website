@@ -7,6 +7,14 @@ on:
       - main
 
 jobs:
+  lint-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Invoke lint-and-test
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Lint and test
+
   docker-release-latest:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
