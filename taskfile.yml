@@ -27,7 +27,8 @@ tasks:
 
   static:
     cmds:
-      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.static -t dev01d/personal-site:static --push
+      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.static
+        -t dev01d/personal-site:static -t dev01d/personal-site:latest --push
 
   node:
     cmds:
