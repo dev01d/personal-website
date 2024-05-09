@@ -7,14 +7,8 @@ import PlausibleProvider from 'next-plausible'
 
 export default function Root({ Component, pageProps }: AppProps) {
   return (
-    <PlausibleProvider
-      domain="jasonbehnke.io"
-      selfHosted={true}
-      customDomain="https://analytics.jasonbehnke.io"
-    >
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </PlausibleProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   )
 }
