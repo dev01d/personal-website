@@ -17,7 +17,6 @@ COPY --from=deps /app/node_modules ./node_modules
 ARG NEXT_PUBLIC_BUILD_ENV=static
 RUN pnpm run build
 RUN pnpm prune --prod
-RUN pnpm export
 
 ####* Build App ####
 FROM nginx:alpine as app
