@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Invoke lint-and-test
-        uses: benc-uk/workflow-dispatch
+        uses: benc-uk/workflow-dispatch@v1.2.3
         with:
           workflow: Lint and test
 
@@ -22,7 +22,8 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: lowlighter/metrics
+      - name: Metrics embed
+        uses: lowlighter/metrics@v3.34
         with:
           filename: .github/github-metrics.*
           token: NOT_NEEDED
