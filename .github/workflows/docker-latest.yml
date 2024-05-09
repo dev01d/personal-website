@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Invoke lint-and-test
-        uses: benc-uk/workflow-dispatch@v121
+        uses: benc-uk/workflow-dispatch
         with:
           workflow: Lint and test
 
