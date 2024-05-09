@@ -20,7 +20,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install deps
-        run: pnpm install -s --frozen-lockfile
+        run: pnpm install
 
       - name: Lint code
         run: pnpm lint
