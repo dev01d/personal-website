@@ -1,4 +1,4 @@
-import AboutJson from '../src/components/AboutJson'
+import AboutJson from '@/components/AboutJson'
 
 export default function About() {
   return (

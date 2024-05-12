@@ -1,11 +1,10 @@
+// @ts-check
 const { withSentryConfig } = require('@sentry/nextjs')
 
-// /** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ **/
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
   sentry: {
     disableServerWebpackPlugin: true,
     disableClientWebpackPlugin: true,

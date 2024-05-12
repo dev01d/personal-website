@@ -5,6 +5,6 @@ describe('AboutPage', () => {
   it('Should render json content', () => {
     const textToFind = '"Name"'
     render(<AboutPage />)
-    expect(screen.getByText(textToFind)).toBeInTheDocument()
+    expect(screen.getByText(textToFind)).toBeDefined()
   })
 })

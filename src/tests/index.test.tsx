@@ -5,6 +5,6 @@ describe('HomePage', () => {
   it('Should render SVG alt text', () => {
     const textToFind = 'logo depicting the letters j and b'
     render(<HomePage />)
-    expect(screen.getByAltText(textToFind)).toBeInTheDocument()
+    expect(screen.getByAltText(textToFind)).toBeDefined()
   })
 })
