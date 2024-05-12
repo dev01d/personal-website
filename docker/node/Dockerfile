@@ -1,22 +1,20 @@
 ####* Base img ####
 FROM node:current-alpine3.18 AS base
-WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
-RUN yarn global add pnpm
 
 ####* Deps ENV ####
 FROM base AS deps
-WORKDIR /app
 RUN apk add --no-cache libc6-compat
-RUN pnpm i -s --frozen-lockfile
+WORKDIR /app
+COPY package.json pnpm-lock.yaml ./
+RUN corepack enable pnpm && pnpm i --frozen-lockfile
 
 ####* Build ENV ####
-FROM base AS builder
+FROM base AS build
 WORKDIR /app
-COPY ./docker/next.config.js ./
-COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN pnpm run build
+COPY ./docker/node/next.config.js ./
+COPY --from=deps /app/node_modules ./node_modules
+RUN corepack enable pnpm && pnpm run build
 RUN pnpm prune --prod
 
 ####* Build App ####
@@ -30,11 +28,14 @@ RUN apk add --no-cache tini \
     && apk cache clean
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
-COPY --chown=nextjs:nodejs --from=builder /app/public ./public
-COPY --chown=nextjs:nodejs --from=builder /app/.next/static ./.next/static
+RUN mkdir .next
+RUN chown nextjs:nodejs .next
+COPY --chown=nextjs:nodejs --from=build /app/public ./public
+COPY --chown=nextjs:nodejs --from=build /app/.next/standalone ./
+COPY --chown=nextjs:nodejs --from=build /app/.next/static ./.next/static
 USER nextjs
 EXPOSE 3000
 ENTRYPOINT ["/sbin/tini", "--"]
 HEALTHCHECK --interval=12s --timeout=12s --start-period=30s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost/api/status || exit 1
-CMD ["node", "server.js"]
+CMD HOSTNAME="0.0.0.0" node server.js
