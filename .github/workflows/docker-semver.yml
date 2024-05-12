@@ -48,7 +48,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/Dockerfile.static
+          file: ./docker/static/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           labels: ${{ steps.meta-static.outputs.labels }}
@@ -70,7 +70,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/Dockerfile.node
+          file: ./docker/node/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           labels: ${{ steps.meta-node.outputs.labels }}

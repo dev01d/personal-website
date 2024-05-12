@@ -38,7 +38,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/Dockerfile.static
+          file: ./docker/static/Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: dev01d/personal-site:latest
