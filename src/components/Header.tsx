@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-const Menu = dynamic(() => import('./Sidebar'))
+const Menu = dynamic(() => import('@/components/Sidebar'))
 
 export default function Header() {
   return (

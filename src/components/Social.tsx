@@ -5,7 +5,7 @@ import {
   faInstagram,
   faDev,
 } from '@fortawesome/free-brands-svg-icons'
-import styles from '../styles/modules/Social.module.css'
+import styles from '@/styles/modules/Social.module.css'
 
 const Social = () => {
   return (

@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-const Social = dynamic(() => import('./Social'))
+const Social = dynamic(() => import('@/components/Social'))
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
 // @ts-nocheck
-import getPost from '../../src/utils/getPost'
-import getPosts from '../../src/utils/getPosts'
+import getPost from '@/utils/getPost'
+import getPosts from '@/utils/getPosts'
 import Link from 'next/link'
 import Image from 'next/image'
 import rehypeHighlight from 'rehype-highlight'
@@ -18,7 +18,6 @@ function Post({ data, content }) {
         <div className="mb-5">
           <Image
             src={data.cover_image}
-            layout="responsive"
             height={637}
             width={1280}
             alt="cover photo"
