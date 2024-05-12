@@ -8,7 +8,6 @@ const createJestConfig = nextJest({
 const config = {
   setupFilesAfterEnv: ['@testing-library/jest-dom'],
   moduleDirectories: ['node_modules', '<rootDir>/'],
-
   testEnvironment: 'jest-environment-jsdom',
 }
 

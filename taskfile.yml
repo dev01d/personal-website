@@ -5,6 +5,11 @@ tasks:
     cmds:
       - task: dependencies
 
+  docker:
+    cmds:
+      - task: docker-static
+      - task: docker-node
+
   dependencies:
     cmds:
       - pnpm install
@@ -25,11 +30,19 @@ tasks:
     cmds:
       - pnpm test:ci
 
-  static:
+  act-latest:
     cmds:
-      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.static
+      - act -W '.github/workflows/docker-latest.yml' --container-architecture linux/amd64
+
+  docker-static:
+    cmds:
+      - docker buildx build --platform inux/amd64,linux/arm64 . -f ./docker/static/Dockerfile
         -t dev01d/personal-site:static -t dev01d/personal-site:latest --push
 
-  node:
+  docker-node:
     cmds:
-      - docker buildx build --platform=linux/amd64,linux/arm64 . -f ./docker/Dockerfile.node -t dev01d/personal-site:node --push
+      - docker buildx build --platform linux/amd64,linux/arm64 . -f ./docker/node/Dockerfile -t dev01d/personal-site:node --push
+
+  docker-test:
+    cmds:
+      - docker build . -f ./docker/node/Dockerfile -t dev01d/personal-site:node
