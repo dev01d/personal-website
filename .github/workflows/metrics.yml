@@ -23,7 +23,7 @@ jobs:
       contents: write
     steps:
       - name: Metrics embed
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@v3.34
         with:
           filename: .github/github-metrics.*
           token: NOT_NEEDED
