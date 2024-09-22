@@ -9,14 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  lint-workflow:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Invoke lint-and-test
-        uses: benc-uk/workflow-dispatch@v1.2.4
-        with:
-          workflow: Lint and test
-
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
