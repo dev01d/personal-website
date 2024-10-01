@@ -19,7 +19,7 @@ importers:
         version: 14.2.13(@babel/core@7.23.5)(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-mdx-remote:
         specifier: ^5.0.0
-        version: 5.0.0(@types/react@18.3.8)(react@18.3.1)
+        version: 5.0.0(@types/react@18.3.10)(react@18.3.1)
       react:
         specifier: ^18.3.1
         version: 18.3.1
@@ -68,7 +68,7 @@ importers:
         version: 6.5.0
       '@testing-library/react':
         specifier: ^16.0.1
-        version: 16.0.1(@testing-library/dom@10.0.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 16.0.1(@testing-library/dom@10.0.0)(@types/react-dom@18.3.0)(@types/react@18.3.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/jest':
         specifier: ^29.5.13
         version: 29.5.13
@@ -76,8 +76,8 @@ importers:
         specifier: 22.6.1
         version: 22.6.1
       '@types/react':
-        specifier: 18.3.8
-        version: 18.3.8
+        specifier: 18.3.10
+        version: 18.3.10
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
@@ -1094,9 +1094,6 @@ packages:
   '@types/mysql@2.15.22':
     resolution: {integrity: sha512-wK1pzsJVVAjYCSZWQoWHziQZbNggXFDUEIGf54g4ZM/ERuP86uGdWeKZWMYlqTPMZfHJJvLPyogXGvCOg87yLQ==}
 
-  '@types/node@22.5.5':
-    resolution: {integrity: sha512-Xjs4y5UPO/CLdzpgR6GirZJx36yScjh73+2NlLlkFRSoQN8B0DpfXPdZGnvVmLRLOsqDpOfTNv7D9trgGhmOIA==}
-
   '@types/node@22.6.1':
     resolution: {integrity: sha512-V48tCfcKb/e6cVUigLAaJDAILdMP0fUW6BidkPK4GpGjXcfbnoHasCZDwz3N3yVt5we2RHm4XTQCpv0KJz9zqw==}
 
@@ -1111,6 +1108,9 @@ packages:
 
   '@types/react-dom@18.3.0':
     resolution: {integrity: sha512-EhwApuTmMBmXuFOikhQLIBUn6uFg81SwLMOAUgodJF14SOBOCMdU04gDoYi0WOJJHD144TL32z4yDqCW3dnkQg==}
+
+  '@types/react@18.3.10':
+    resolution: {integrity: sha512-02sAAlBnP39JgXwkAq3PeU9DVaaGpZyF3MGcC0MKgQVkZor5IiiDAipVaxQHtDJAmO4GIy/rVBy/LzVj76Cyqg==}
 
   '@types/react@18.3.8':
     resolution: {integrity: sha512-syBUrW3/XpnW4WJ41Pft+I+aPoDVbrBVQGEnbD7NijDGlVC+8gV/XKRY+7vMDlfPpbwYt0l1vd/Sj8bJGMbs9Q==}
@@ -4664,10 +4664,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@mdx-js/react@3.0.1(@types/react@18.3.8)(react@18.3.1)':
+  '@mdx-js/react@3.0.1(@types/react@18.3.10)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.10
-      '@types/react': 18.3.8
+      '@types/react': 18.3.10
       react: 18.3.1
 
   '@next/env@14.2.13': {}
@@ -5222,14 +5222,14 @@ snapshots:
       lodash: 4.17.21
       redent: 3.0.0
 
-  '@testing-library/react@16.0.1(@testing-library/dom@10.0.0)(@types/react-dom@18.3.0)(@types/react@18.3.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@testing-library/react@16.0.1(@testing-library/dom@10.0.0)(@types/react-dom@18.3.0)(@types/react@18.3.10)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@babel/runtime': 7.23.5
       '@testing-library/dom': 10.0.0
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
     optionalDependencies:
-      '@types/react': 18.3.8
+      '@types/react': 18.3.10
       '@types/react-dom': 18.3.0
 
   '@tootallnate/once@2.0.0': {}
@@ -5334,10 +5334,6 @@ snapshots:
     dependencies:
       '@types/node': 22.6.1
 
-  '@types/node@22.5.5':
-    dependencies:
-      undici-types: 6.19.8
-
   '@types/node@22.6.1':
     dependencies:
       undici-types: 6.19.8
@@ -5359,10 +5355,16 @@ snapshots:
       '@types/react': 18.3.8
     optional: true
 
+  '@types/react@18.3.10':
+    dependencies:
+      '@types/prop-types': 15.7.11
+      csstype: 3.1.2
+
   '@types/react@18.3.8':
     dependencies:
       '@types/prop-types': 15.7.11
       csstype: 3.1.2
+    optional: true
 
   '@types/semver@7.5.8': {}
 
@@ -7375,7 +7377,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 22.5.5
+      '@types/node': 22.6.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -7933,11 +7935,11 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next-mdx-remote@5.0.0(@types/react@18.3.8)(react@18.3.1):
+  next-mdx-remote@5.0.0(@types/react@18.3.10)(react@18.3.1):
     dependencies:
       '@babel/code-frame': 7.23.5
       '@mdx-js/mdx': 3.0.1
-      '@mdx-js/react': 3.0.1(@types/react@18.3.8)(react@18.3.1)
+      '@mdx-js/react': 3.0.1(@types/react@18.3.10)(react@18.3.1)
       react: 18.3.1
       unist-util-remove: 3.1.1
       vfile: 6.0.1
