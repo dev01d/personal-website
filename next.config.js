@@ -5,7 +5,7 @@ const { withSentryConfig } = require('@sentry/nextjs')
  * @type {import('next').NextConfig}
  **/
 const nextConfig = {
-  sentry: {
+  sentryBuildOptions: {
     disableServerWebpackPlugin: true,
     disableClientWebpackPlugin: true,
     widenClientFileUpload: true,
