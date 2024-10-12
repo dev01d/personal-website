@@ -12,23 +12,23 @@ tasks:
 
   dependencies:
     cmds:
-      - pnpm install
+      - bun install
 
   dev:
     cmds:
-      - pnpm dev
+      - bun run dev
 
   build:
     cmds:
-      - pnpm run build
+      - bun run build
 
   test:
     cmds:
-      - pnpm test
+      - bun run test
 
   test-ci:
     cmds:
-      - pnpm test:ci
+      - bun run test:ci
 
   act-latest:
     cmds:
