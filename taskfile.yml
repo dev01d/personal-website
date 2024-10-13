@@ -32,7 +32,11 @@ tasks:
 
   act-latest:
     cmds:
-      - act -W '.github/workflows/docker-latest.yml' --container-architecture linux/amd64
+      - act -j docker-latest --container-architecture linux/amd64
+
+  act-lint:
+    cmds:
+      - act -j lint-and-test --container-architecture linux/amd64
 
   docker-static:
     cmds:
