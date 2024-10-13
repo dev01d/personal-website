@@ -3,6 +3,9 @@ name: Lint and test
 on:
   workflow_call:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 jobs:
   lint-and-test:
@@ -10,20 +13,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          version: latest
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: 'pnpm'
+          bun-version: latest
 
       - name: Install deps
-        run: pnpm install
+        run: bun install
 
       - name: Lint code
-        run: pnpm lint
+        run: bun run lint
 
       - name: Test
-        run: pnpm test:ci
+        run: bun run test:ci

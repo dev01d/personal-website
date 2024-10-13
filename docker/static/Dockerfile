@@ -1,12 +1,11 @@
 ####* Base img ####
-FROM node:current-alpine3.18 AS base
+FROM oven/bun:1-alpine AS base
 
 ####* Deps ENV ####
 FROM base AS deps
-RUN apk add --no-cache libc6-compat
 WORKDIR /app
-COPY package.json pnpm-lock.yaml ./
-RUN corepack enable pnpm && pnpm i --frozen-lockfile
+COPY package.json bun.lockb ./
+RUN bun i --frozen-lockfile
 
 ####* Build ENV ####
 FROM base AS build
@@ -14,8 +13,8 @@ WORKDIR /app
 COPY . .
 COPY ./docker/static/next.config.js .
 COPY --from=deps /app/node_modules ./node_modules
-RUN corepack enable pnpm && pnpm run build
-RUN pnpm prune --prod
+RUN bun run build
+
 
 ####* Build App ####
 FROM nginx:alpine as app
