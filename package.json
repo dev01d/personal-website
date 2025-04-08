@@ -36,7 +36,7 @@
     "rehype-highlight": "^7.0.1",
     "rehype-slug": "^6.0.0",
     "remark-frontmatter": "^5.0.0",
-    "sharp": "^0.33.5"
+    "sharp": "^0.34.1"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
