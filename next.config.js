@@ -1,11 +1,13 @@
 // @ts-check
-const { withSentryConfig } = require('@sentry/nextjs')
-
-/**
- * @type {import('next').NextConfig}
- **/
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  // experimental: {
+  //   optimizePackageImports: ['package-name'],
+  // },
 }
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
 
-module.exports = withSentryConfig(nextConfig)
+module.exports = withBundleAnalyzer(nextConfig)
