@@ -14,6 +14,9 @@ dev:
 build:
   bun run build
 
+analyze:
+  bun run build-analyze
+
 test:
   bun run test
 
