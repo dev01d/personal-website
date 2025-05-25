@@ -1,4 +1,3 @@
-import 'tailwindcss/tailwind.css'
 import '@/styles/main.css'
 import type { AppProps } from 'next/app'
 import '@fortawesome/fontawesome-svg-core/styles.css'
