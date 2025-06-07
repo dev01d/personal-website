@@ -17,7 +17,7 @@ RUN bun run build
 
 
 ####* Build App ####
-FROM nginx:alpine as app
+FROM nginx:alpine AS app
 LABEL maintainer="Jason Behnke <contact@jasonbehnke.io>"
 COPY ./docker/static/default.conf /etc/nginx/conf.d/
 COPY --from=build /app/out /var/www/
