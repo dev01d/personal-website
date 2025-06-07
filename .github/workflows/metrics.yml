@@ -2,6 +2,8 @@ name: Metrics
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * SUN'
   pull_request:
     branches:
       - main
@@ -21,9 +23,9 @@ jobs:
           filename: .github/github-metrics.*
           token: NOT_NEEDED
           # Options
-          template: classic
           base: ''
-          config_timezone: America/Los_Angeles
+          config_timezone: America/Phoenix
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
+          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: https://jasonbehnke.io
