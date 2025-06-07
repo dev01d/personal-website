@@ -5,7 +5,7 @@ FROM oven/bun:1-alpine AS base
 FROM base AS deps
 WORKDIR /app
 COPY package.json bun.lockb ./
-RUN bun i --frozen-lockfile
+RUN bun install --frozen-lockfile
 
 ####* Build ENV ####
 FROM base AS build
@@ -20,10 +20,10 @@ RUN bun run build
 FROM base AS app
 LABEL maintainer="Jason Behnke <contact@jasonbehnke.io>"
 WORKDIR /app
-ENV PORT 3000
-ENV HOSTNAME 0.0.0.0
-ENV NODE_ENV production
-ENV TINI_VERSION v0.19.0
+ENV PORT=3000
+ENV HOSTNAME=0.0.0.0
+ENV NODE_ENV=production
+ENV TINI_VERSION=v0.19.0
 RUN apk add --no-cache tini \
     && apk cache clean
 RUN adduser --system --uid 1001 nextjs
@@ -37,4 +37,4 @@ EXPOSE 3000
 ENTRYPOINT ["/sbin/tini", "--"]
 HEALTHCHECK --interval=12s --timeout=12s --start-period=30s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost/api/status || exit 1
-CMD bun server.js
+CMD ["bun", "server.js"]
