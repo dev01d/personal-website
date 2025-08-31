@@ -5,7 +5,7 @@ FROM oven/bun:1-alpine AS base
 FROM base AS deps
 WORKDIR /app
 COPY package.json bun.lockb ./
-RUN bun i --frozen-lockfile
+RUN bun install
 
 ####* Build ENV ####
 FROM base AS build
