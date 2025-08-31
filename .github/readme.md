@@ -11,7 +11,3 @@
 2. Of or concerning one's private life, professional life, relationships, emotions, and/or accomplishments.
 
    > "This personal website describes his career and gives little information about his personal life"
-
-<p align="center">
-    <img src="github-metrics.svg" />
-</p>
