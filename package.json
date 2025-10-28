@@ -45,7 +45,7 @@
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^3.0.2",
-    "@next/bundle-analyzer": "^15.4.0-canary.51",
+    "@next/bundle-analyzer": "^16.0.0",
     "@tailwindcss/typography": "^0.5.15",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
